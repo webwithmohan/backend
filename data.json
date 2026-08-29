@@ -1,0 +1,4274 @@
+[
+    {
+      "id": 1,
+      "letter": "W",
+      "property": "-webkit-text-fill-color",
+      "definition": "Sets the fill color of text characters (WebKit).",
+      "example": "h1 { -webkit-text-fill-color: transparent; }",
+      "value": "<color>"
+    },
+    {
+      "id": 2,
+      "letter": "W",
+      "property": "-webkit-text-stroke",
+      "definition": "Shorthand to stroke the outline of text characters (WebKit).",
+      "example": "h1 { -webkit-text-stroke: 1px black; }",
+      "value": "<length> || <color>"
+    },
+    {
+      "id": 3,
+      "letter": "W",
+      "property": "-webkit-text-stroke-color",
+      "definition": "Sets the stroke color of text characters (WebKit).",
+      "example": "h1 { -webkit-text-stroke-color: red; }",
+      "value": "<color>"
+    },
+    {
+      "id": 4,
+      "letter": "W",
+      "property": "-webkit-text-stroke-width",
+      "definition": "Sets the stroke width of text characters (WebKit).",
+      "example": "h1 { -webkit-text-stroke-width: 2px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 5,
+      "letter": "A",
+      "property": "accent-color",
+      "definition": "Sets the accent color of user interface controls.",
+      "example": "input { accent-color: red; }",
+      "value": "auto | <color>"
+    },
+    {
+      "id": 6,
+      "letter": "A",
+      "property": "align-content",
+      "definition": "Controls the distribution of flex or grid lines along the cross axis.",
+      "example": ".container { display: flex; align-content: center; }",
+      "value": "normal | flex-start | flex-end | center | space-between | space-around | space-evenly | stretch | start | end | baseline"
+    },
+    {
+      "id": 7,
+      "letter": "A",
+      "property": "align-items",
+      "definition": "Controls the alignment of flex or grid items along the cross axis.",
+      "example": ".container { display: flex; align-items: center; }",
+      "value": "normal | stretch | flex-start | flex-end | center | baseline | start | end | self-start | self-end"
+    },
+    {
+      "id": 8,
+      "letter": "A",
+      "property": "align-self",
+      "definition": "Overrides align-items for a single flex or grid item.",
+      "example": ".item { align-self: flex-end; }",
+      "value": "auto | normal | stretch | flex-start | flex-end | center | baseline | start | end"
+    },
+    {
+      "id": 9,
+      "letter": "A",
+      "property": "alignment-baseline",
+      "definition": "Specifies the vertical alignment of an SVG element's baseline.",
+      "example": "text { alignment-baseline: middle; }",
+      "value": "baseline | text-bottom | alphabetic | ideographic | middle | central | mathematical | text-top"
+    },
+    {
+      "id": 10,
+      "letter": "A",
+      "property": "all",
+      "definition": "Resets all properties (except unicode-bidi and direction) to their initial or inherited value.",
+      "example": ".reset { all: unset; }",
+      "value": "initial | inherit | unset | revert | revert-layer"
+    },
+    {
+      "id": 11,
+      "letter": "A",
+      "property": "anchor-name",
+      "definition": "Gives an element a name so it can be referenced as an anchor for positioning.",
+      "example": ".anchor { anchor-name: --my-anchor; }",
+      "value": "none | <dashed-ident>#"
+    },
+    {
+      "id": 12,
+      "letter": "A",
+      "property": "anchor-scope",
+      "definition": "Limits which elements can reference an anchor by name.",
+      "example": ".container { anchor-scope: --my-anchor; }",
+      "value": "none | all | <dashed-ident>#"
+    },
+    {
+      "id": 13,
+      "letter": "A",
+      "property": "animation",
+      "definition": "Shorthand for animation-related properties.",
+      "example": ".box { animation: spin 2s linear infinite; }",
+      "value": "<animation-name> || <time> || <easing-function> || <time> || <animation-iteration-count> || <animation-direction> || <animation-fill-mode> || <animation-play-state>"
+    },
+    {
+      "id": 14,
+      "letter": "A",
+      "property": "animation-composition",
+      "definition": "Specifies how multiple animations affecting the same property combine.",
+      "example": ".box { animation-composition: add; }",
+      "value": "replace | add | accumulate"
+    },
+    {
+      "id": 15,
+      "letter": "A",
+      "property": "animation-delay",
+      "definition": "Specifies the delay before an animation starts.",
+      "example": ".box { animation-delay: 1s; }",
+      "value": "<time>"
+    },
+    {
+      "id": 16,
+      "letter": "A",
+      "property": "animation-direction",
+      "definition": "Specifies whether an animation plays forwards, backwards, or alternates.",
+      "example": ".box { animation-direction: alternate; }",
+      "value": "normal | reverse | alternate | alternate-reverse"
+    },
+    {
+      "id": 17,
+      "letter": "A",
+      "property": "animation-duration",
+      "definition": "Specifies how long an animation takes to complete one cycle.",
+      "example": ".box { animation-duration: 3s; }",
+      "value": "auto | <time>"
+    },
+    {
+      "id": 18,
+      "letter": "A",
+      "property": "animation-fill-mode",
+      "definition": "Specifies how a target applies styles before/after execution.",
+      "example": ".box { animation-fill-mode: forwards; }",
+      "value": "none | forwards | backwards | both"
+    },
+    {
+      "id": 19,
+      "letter": "A",
+      "property": "animation-iteration-count",
+      "definition": "Specifies the number of times an animation should repeat.",
+      "example": ".box { animation-iteration-count: infinite; }",
+      "value": "infinite | <number>"
+    },
+    {
+      "id": 20,
+      "letter": "A",
+      "property": "animation-name",
+      "definition": "Specifies the name of the @keyframes animation.",
+      "example": ".box { animation-name: spin; }",
+      "value": "none | <custom-ident> | <string>"
+    },
+    {
+      "id": 21,
+      "letter": "A",
+      "property": "animation-play-state",
+      "definition": "Specifies whether an animation is running or paused.",
+      "example": ".box { animation-play-state: paused; }",
+      "value": "running | paused"
+    },
+    {
+      "id": 22,
+      "letter": "A",
+      "property": "animation-range",
+      "definition": "Shorthand setting the start and end of an animation's attachment range along its timeline.",
+      "example": ".box { animation-range: entry 0% cover 100%; }",
+      "value": "<animation-range-start> <animation-range-end>?"
+    },
+    {
+      "id": 23,
+      "letter": "A",
+      "property": "animation-range-end",
+      "definition": "Specifies the end of an animation's attachment range along its timeline.",
+      "example": ".box { animation-range-end: cover 100%; }",
+      "value": "normal | <length-percentage> | (entry|exit|cover|contain) <percentage>?"
+    },
+    {
+      "id": 24,
+      "letter": "A",
+      "property": "animation-range-start",
+      "definition": "Specifies the start of an animation's attachment range along its timeline.",
+      "example": ".box { animation-range-start: entry 0%; }",
+      "value": "normal | <length-percentage> | (entry|exit|cover|contain) <percentage>?"
+    },
+    {
+      "id": 25,
+      "letter": "A",
+      "property": "animation-timeline",
+      "definition": "Specifies the timeline that drives an animation's progress.",
+      "example": ".box { animation-timeline: scroll(); }",
+      "value": "none | auto | <dashed-ident> | scroll() | view()"
+    },
+    {
+      "id": 26,
+      "letter": "A",
+      "property": "animation-timing-function",
+      "definition": "Specifies the speed curve of an animation.",
+      "example": ".box { animation-timing-function: ease-in-out; }",
+      "value": "linear | ease | ease-in | ease-out | ease-in-out | step-start | step-end | steps() | cubic-bezier()"
+    },
+    {
+      "id": 27,
+      "letter": "A",
+      "property": "appearance",
+      "definition": "Controls the native platform styling of an element.",
+      "example": "input { appearance: none; }",
+      "value": "none | auto | textfield | button | checkbox | radio | menulist | etc. (native control keywords)"
+    },
+    {
+      "id": 28,
+      "letter": "A",
+      "property": "aspect-ratio",
+      "definition": "Sets the preferred aspect ratio of a box.",
+      "example": "img { aspect-ratio: 16 / 9; }",
+      "value": "auto | <ratio>"
+    },
+    {
+      "id": 29,
+      "letter": "B",
+      "property": "backdrop-filter",
+      "definition": "Applies graphical effects to the area behind an element.",
+      "example": ".modal { backdrop-filter: blur(5px); }",
+      "value": "none | <filter-function-list>"
+    },
+    {
+      "id": 30,
+      "letter": "B",
+      "property": "backface-visibility",
+      "definition": "Determines whether the back face of a transformed element is visible.",
+      "example": ".card { backface-visibility: hidden; }",
+      "value": "visible | hidden"
+    },
+    {
+      "id": 31,
+      "letter": "B",
+      "property": "background",
+      "definition": "Shorthand for background-related properties.",
+      "example": "body { background: #fff url(bg.png) no-repeat; }",
+      "value": "<background-color> || <background-image> || <background-position> / <background-size> || <background-repeat> || <background-attachment> || <background-origin> || <background-clip>"
+    },
+    {
+      "id": 32,
+      "letter": "B",
+      "property": "background-attachment",
+      "definition": "Sets whether a background image scrolls with content or is fixed.",
+      "example": "body { background-attachment: fixed; }",
+      "value": "scroll | fixed | local"
+    },
+    {
+      "id": 33,
+      "letter": "B",
+      "property": "background-blend-mode",
+      "definition": "Defines the blending mode of background layers.",
+      "example": ".box { background-blend-mode: multiply; }",
+      "value": "normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | difference | exclusion | hue | saturation | color | luminosity"
+    },
+    {
+      "id": 34,
+      "letter": "B",
+      "property": "background-clip",
+      "definition": "Sets whether the background extends underneath the border/padding.",
+      "example": ".box { background-clip: padding-box; }",
+      "value": "border-box | padding-box | content-box | text"
+    },
+    {
+      "id": 35,
+      "letter": "B",
+      "property": "background-color",
+      "definition": "Sets the background color of an element.",
+      "example": "body { background-color: #f0f0f0; }",
+      "value": "<color>"
+    },
+    {
+      "id": 36,
+      "letter": "B",
+      "property": "background-image",
+      "definition": "Sets one or more background images.",
+      "example": "body { background-image: url(bg.jpg); }",
+      "value": "none | <image>#"
+    },
+    {
+      "id": 37,
+      "letter": "B",
+      "property": "background-origin",
+      "definition": "Specifies the positioning area of background images.",
+      "example": ".box { background-origin: content-box; }",
+      "value": "border-box | padding-box | content-box"
+    },
+    {
+      "id": 38,
+      "letter": "B",
+      "property": "background-position",
+      "definition": "Sets the starting position of a background image.",
+      "example": ".box { background-position: center top; }",
+      "value": "[ left | center | right | top | bottom | <length-percentage> ]"
+    },
+    {
+      "id": 39,
+      "letter": "B",
+      "property": "background-position-x",
+      "definition": "Sets the horizontal starting position of a background image.",
+      "example": ".box { background-position-x: right; }",
+      "value": "left | center | right | <length-percentage>"
+    },
+    {
+      "id": 40,
+      "letter": "B",
+      "property": "background-position-y",
+      "definition": "Sets the vertical starting position of a background image.",
+      "example": ".box { background-position-y: top; }",
+      "value": "top | center | bottom | <length-percentage>"
+    },
+    {
+      "id": 41,
+      "letter": "B",
+      "property": "background-repeat",
+      "definition": "Defines how a background image repeats.",
+      "example": ".box { background-repeat: no-repeat; }",
+      "value": "repeat | repeat-x | repeat-y | no-repeat | space | round"
+    },
+    {
+      "id": 42,
+      "letter": "B",
+      "property": "background-repeat-x",
+      "definition": "Defines how a background image repeats horizontally.",
+      "example": ".box { background-repeat-x: repeat; }",
+      "value": "repeat | no-repeat | space | round"
+    },
+    {
+      "id": 43,
+      "letter": "B",
+      "property": "background-repeat-y",
+      "definition": "Defines how a background image repeats vertically.",
+      "example": ".box { background-repeat-y: no-repeat; }",
+      "value": "repeat | no-repeat | space | round"
+    },
+    {
+      "id": 44,
+      "letter": "B",
+      "property": "background-size",
+      "definition": "Specifies the size of background images.",
+      "example": ".box { background-size: cover; }",
+      "value": "auto | <length-percentage> | cover | contain"
+    },
+    {
+      "id": 45,
+      "letter": "B",
+      "property": "baseline-shift",
+      "definition": "Shifts the dominant baseline of SVG text from its parent's baseline.",
+      "example": "tspan { baseline-shift: super; }",
+      "value": "baseline | sub | super | <length-percentage>"
+    },
+    {
+      "id": 46,
+      "letter": "B",
+      "property": "baseline-source",
+      "definition": "Specifies which baseline source is used for a multi-line inline box.",
+      "example": ".box { baseline-source: first; }",
+      "value": "auto | first | last"
+    },
+    {
+      "id": 47,
+      "letter": "B",
+      "property": "block-size",
+      "definition": "Defines the size of an element's block dimension (logical height/width).",
+      "example": ".box { block-size: 200px; }",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 48,
+      "letter": "B",
+      "property": "border",
+      "definition": "Shorthand for border-width, style, and color.",
+      "example": ".box { border: 1px solid black; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 49,
+      "letter": "B",
+      "property": "border-block",
+      "definition": "Sets the block-direction border shorthand.",
+      "example": ".box { border-block: 1px solid black; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 50,
+      "letter": "B",
+      "property": "border-block-color",
+      "definition": "Sets the block-direction border color.",
+      "example": ".box { border-block-color: 1px solid black; }",
+      "value": "<color>"
+    },
+    {
+      "id": 51,
+      "letter": "B",
+      "property": "border-block-end",
+      "definition": "Sets the block-direction border shorthand.",
+      "example": ".box { border-block-end: 1px solid black; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 52,
+      "letter": "B",
+      "property": "border-block-end-color",
+      "definition": "Sets the block-direction border color.",
+      "example": ".box { border-block-end-color: 1px solid black; }",
+      "value": "<color>"
+    },
+    {
+      "id": 53,
+      "letter": "B",
+      "property": "border-block-end-style",
+      "definition": "Sets the block-direction border style.",
+      "example": ".box { border-block-end-style: 1px solid black; }",
+      "value": "<line-style>"
+    },
+    {
+      "id": 54,
+      "letter": "B",
+      "property": "border-block-end-width",
+      "definition": "Sets the block-direction border width.",
+      "example": ".box { border-block-end-width: 1px solid black; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 55,
+      "letter": "B",
+      "property": "border-block-start",
+      "definition": "Sets the block-direction border shorthand.",
+      "example": ".box { border-block-start: 1px solid black; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 56,
+      "letter": "B",
+      "property": "border-block-start-color",
+      "definition": "Sets the block-direction border color.",
+      "example": ".box { border-block-start-color: 1px solid black; }",
+      "value": "<color>"
+    },
+    {
+      "id": 57,
+      "letter": "B",
+      "property": "border-block-start-style",
+      "definition": "Sets the block-direction border style.",
+      "example": ".box { border-block-start-style: 1px solid black; }",
+      "value": "<line-style>"
+    },
+    {
+      "id": 58,
+      "letter": "B",
+      "property": "border-block-start-width",
+      "definition": "Sets the block-direction border width.",
+      "example": ".box { border-block-start-width: 1px solid black; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 59,
+      "letter": "B",
+      "property": "border-block-style",
+      "definition": "Sets the block-direction border style.",
+      "example": ".box { border-block-style: 1px solid black; }",
+      "value": "<line-style>"
+    },
+    {
+      "id": 60,
+      "letter": "B",
+      "property": "border-block-width",
+      "definition": "Sets the block-direction border width.",
+      "example": ".box { border-block-width: 1px solid black; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 61,
+      "letter": "B",
+      "property": "border-bottom",
+      "definition": "Shorthand for bottom border properties.",
+      "example": ".box { border-bottom: 2px dashed red; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 62,
+      "letter": "B",
+      "property": "border-bottom-color",
+      "definition": "Sets the color of the bottom border.",
+      "example": ".box { border-bottom-color: blue; }",
+      "value": "<color>"
+    },
+    {
+      "id": 63,
+      "letter": "B",
+      "property": "border-bottom-left-radius",
+      "definition": "Rounds the bottom-left corner.",
+      "example": ".box { border-bottom-left-radius: 8px; }",
+      "value": "<length-percentage>{1,2}"
+    },
+    {
+      "id": 64,
+      "letter": "B",
+      "property": "border-bottom-right-radius",
+      "definition": "Rounds the bottom-right corner.",
+      "example": ".box { border-bottom-right-radius: 8px; }",
+      "value": "<length-percentage>{1,2}"
+    },
+    {
+      "id": 65,
+      "letter": "B",
+      "property": "border-bottom-style",
+      "definition": "Sets the style of the bottom border.",
+      "example": ".box { border-bottom-style: dotted; }",
+      "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset"
+    },
+    {
+      "id": 66,
+      "letter": "B",
+      "property": "border-bottom-width",
+      "definition": "Sets the width of the bottom border.",
+      "example": ".box { border-bottom-width: 3px; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 67,
+      "letter": "B",
+      "property": "border-collapse",
+      "definition": "Sets whether table borders collapse into a single border.",
+      "example": "table { border-collapse: collapse; }",
+      "value": "collapse | separate"
+    },
+    {
+      "id": 68,
+      "letter": "B",
+      "property": "border-color",
+      "definition": "Sets the color of all four borders.",
+      "example": ".box { border-color: green; }",
+      "value": "<color>{1,4}"
+    },
+    {
+      "id": 69,
+      "letter": "B",
+      "property": "border-end-end-radius",
+      "definition": "Rounds the corner at the end of the block and end of the inline direction.",
+      "example": ".box { border-end-end-radius: 8px; }",
+      "value": "<length-percentage>{1,2}"
+    },
+    {
+      "id": 70,
+      "letter": "B",
+      "property": "border-end-start-radius",
+      "definition": "Rounds the corner at the end of the block and start of the inline direction.",
+      "example": ".box { border-end-start-radius: 8px; }",
+      "value": "<length-percentage>{1,2}"
+    },
+    {
+      "id": 71,
+      "letter": "B",
+      "property": "border-image",
+      "definition": "Specifies an image to be used as the border.",
+      "example": ".box { border-image: url(border.png) 30 round; }",
+      "value": "<border-image-source> || <border-image-slice> [/ <border-image-width>]? || <border-image-repeat>"
+    },
+    {
+      "id": 72,
+      "letter": "B",
+      "property": "border-image-outset",
+      "definition": "Specifies the amount the border image extends beyond the border box.",
+      "example": ".box { border-image-outset: 5px; }",
+      "value": "[<length> | <number>]{1,4}"
+    },
+    {
+      "id": 73,
+      "letter": "B",
+      "property": "border-image-repeat",
+      "definition": "Specifies how the border image is repeated.",
+      "example": ".box { border-image-repeat: stretch; }",
+      "value": "[stretch | repeat | round | space]{1,2}"
+    },
+    {
+      "id": 74,
+      "letter": "B",
+      "property": "border-image-slice",
+      "definition": "Specifies how the border image is sliced.",
+      "example": ".box { border-image-slice: 30; }",
+      "value": "[<number> | <percentage>]{1,4} fill?"
+    },
+    {
+      "id": 75,
+      "letter": "B",
+      "property": "border-image-source",
+      "definition": "Specifies the image used for the border.",
+      "example": ".box { border-image-source: url(border.png); }",
+      "value": "none | <image>"
+    },
+    {
+      "id": 76,
+      "letter": "B",
+      "property": "border-image-width",
+      "definition": "Specifies the widths of the border image.",
+      "example": ".box { border-image-width: 10px; }",
+      "value": "[<length-percentage> | <number> | auto]{1,4}"
+    },
+    {
+      "id": 77,
+      "letter": "B",
+      "property": "border-inline",
+      "definition": "Sets the inline-direction border shorthand.",
+      "example": ".box { border-inline: 1px solid black; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 78,
+      "letter": "B",
+      "property": "border-inline-color",
+      "definition": "Sets the inline-direction border color.",
+      "example": ".box { border-inline-color: 1px solid black; }",
+      "value": "<color>"
+    },
+    {
+      "id": 79,
+      "letter": "B",
+      "property": "border-inline-end",
+      "definition": "Sets the inline-direction border shorthand.",
+      "example": ".box { border-inline-end: 1px solid black; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 80,
+      "letter": "B",
+      "property": "border-inline-end-color",
+      "definition": "Sets the inline-direction border color.",
+      "example": ".box { border-inline-end-color: 1px solid black; }",
+      "value": "<color>"
+    },
+    {
+      "id": 81,
+      "letter": "B",
+      "property": "border-inline-end-style",
+      "definition": "Sets the inline-direction border style.",
+      "example": ".box { border-inline-end-style: 1px solid black; }",
+      "value": "<line-style>"
+    },
+    {
+      "id": 82,
+      "letter": "B",
+      "property": "border-inline-end-width",
+      "definition": "Sets the inline-direction border width.",
+      "example": ".box { border-inline-end-width: 1px solid black; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 83,
+      "letter": "B",
+      "property": "border-inline-start",
+      "definition": "Sets the inline-direction border shorthand.",
+      "example": ".box { border-inline-start: 1px solid black; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 84,
+      "letter": "B",
+      "property": "border-inline-start-color",
+      "definition": "Sets the inline-direction border color.",
+      "example": ".box { border-inline-start-color: 1px solid black; }",
+      "value": "<color>"
+    },
+    {
+      "id": 85,
+      "letter": "B",
+      "property": "border-inline-start-style",
+      "definition": "Sets the inline-direction border style.",
+      "example": ".box { border-inline-start-style: 1px solid black; }",
+      "value": "<line-style>"
+    },
+    {
+      "id": 86,
+      "letter": "B",
+      "property": "border-inline-start-width",
+      "definition": "Sets the inline-direction border width.",
+      "example": ".box { border-inline-start-width: 1px solid black; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 87,
+      "letter": "B",
+      "property": "border-inline-style",
+      "definition": "Sets the inline-direction border style.",
+      "example": ".box { border-inline-style: 1px solid black; }",
+      "value": "<line-style>"
+    },
+    {
+      "id": 88,
+      "letter": "B",
+      "property": "border-inline-width",
+      "definition": "Sets the inline-direction border width.",
+      "example": ".box { border-inline-width: 1px solid black; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 89,
+      "letter": "B",
+      "property": "border-left",
+      "definition": "Shorthand for left border properties.",
+      "example": ".box { border-left: 1px solid black; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 90,
+      "letter": "B",
+      "property": "border-left-color",
+      "definition": "Sets the color of the left border.",
+      "example": ".box { border-left-color: red; }",
+      "value": "<color>"
+    },
+    {
+      "id": 91,
+      "letter": "B",
+      "property": "border-left-style",
+      "definition": "Sets the style of the left border.",
+      "example": ".box { border-left-style: solid; }",
+      "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset"
+    },
+    {
+      "id": 92,
+      "letter": "B",
+      "property": "border-left-width",
+      "definition": "Sets the width of the left border.",
+      "example": ".box { border-left-width: 2px; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 93,
+      "letter": "B",
+      "property": "border-radius",
+      "definition": "Rounds the corners of an element's border.",
+      "example": ".box { border-radius: 10px; }",
+      "value": "<length-percentage>{1,4} [/ <length-percentage>{1,4}]?"
+    },
+    {
+      "id": 94,
+      "letter": "B",
+      "property": "border-right",
+      "definition": "Shorthand for right border properties.",
+      "example": ".box { border-right: 1px solid black; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 95,
+      "letter": "B",
+      "property": "border-right-color",
+      "definition": "Sets the color of the right border.",
+      "example": ".box { border-right-color: red; }",
+      "value": "<color>"
+    },
+    {
+      "id": 96,
+      "letter": "B",
+      "property": "border-right-style",
+      "definition": "Sets the style of the right border.",
+      "example": ".box { border-right-style: solid; }",
+      "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset"
+    },
+    {
+      "id": 97,
+      "letter": "B",
+      "property": "border-right-width",
+      "definition": "Sets the width of the right border.",
+      "example": ".box { border-right-width: 2px; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 98,
+      "letter": "B",
+      "property": "border-shape",
+      "definition": "Specifies a shape for a border, letting content follow a non-rectangular edge.",
+      "example": ".box { border-shape: superellipse(2); }",
+      "value": "none | <basic-shape>{1,2}"
+    },
+    {
+      "id": 99,
+      "letter": "B",
+      "property": "border-spacing",
+      "definition": "Sets the distance between table cell borders.",
+      "example": "table { border-spacing: 5px; }",
+      "value": "<length> <length>?"
+    },
+    {
+      "id": 100,
+      "letter": "B",
+      "property": "border-start-end-radius",
+      "definition": "Rounds the corner at the start of the block and end of the inline direction.",
+      "example": ".box { border-start-end-radius: 8px; }",
+      "value": "<length-percentage>{1,2}"
+    },
+    {
+      "id": 101,
+      "letter": "B",
+      "property": "border-start-start-radius",
+      "definition": "Rounds the corner at the start of the block and start of the inline direction.",
+      "example": ".box { border-start-start-radius: 8px; }",
+      "value": "<length-percentage>{1,2}"
+    },
+    {
+      "id": 102,
+      "letter": "B",
+      "property": "border-style",
+      "definition": "Sets the style of all four borders.",
+      "example": ".box { border-style: dashed; }",
+      "value": "[none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset]{1,4}"
+    },
+    {
+      "id": 103,
+      "letter": "B",
+      "property": "border-top",
+      "definition": "Shorthand for top border properties.",
+      "example": ".box { border-top: 1px solid black; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 104,
+      "letter": "B",
+      "property": "border-top-color",
+      "definition": "Sets the color of the top border.",
+      "example": ".box { border-top-color: red; }",
+      "value": "<color>"
+    },
+    {
+      "id": 105,
+      "letter": "B",
+      "property": "border-top-left-radius",
+      "definition": "Rounds the top-left corner.",
+      "example": ".box { border-top-left-radius: 8px; }",
+      "value": "<length-percentage>{1,2}"
+    },
+    {
+      "id": 106,
+      "letter": "B",
+      "property": "border-top-right-radius",
+      "definition": "Rounds the top-right corner.",
+      "example": ".box { border-top-right-radius: 8px; }",
+      "value": "<length-percentage>{1,2}"
+    },
+    {
+      "id": 107,
+      "letter": "B",
+      "property": "border-top-style",
+      "definition": "Sets the style of the top border.",
+      "example": ".box { border-top-style: solid; }",
+      "value": "none | hidden | dotted | dashed | solid | double | groove | ridge | inset | outset"
+    },
+    {
+      "id": 108,
+      "letter": "B",
+      "property": "border-top-width",
+      "definition": "Sets the width of the top border.",
+      "example": ".box { border-top-width: 2px; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 109,
+      "letter": "B",
+      "property": "border-width",
+      "definition": "Sets the width of all four borders.",
+      "example": ".box { border-width: 2px; }",
+      "value": "<line-width>{1,4}"
+    },
+    {
+      "id": 110,
+      "letter": "B",
+      "property": "bottom",
+      "definition": "Sets the distance of a positioned element from the bottom.",
+      "example": ".box { position: absolute; bottom: 0; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 111,
+      "letter": "B",
+      "property": "box-decoration-break",
+      "definition": "Specifies how an element's box decorations are rendered when broken across lines/columns/pages.",
+      "example": "span { box-decoration-break: clone; }",
+      "value": "slice | clone"
+    },
+    {
+      "id": 112,
+      "letter": "B",
+      "property": "box-shadow",
+      "definition": "Adds shadow effects around an element's frame.",
+      "example": ".box { box-shadow: 2px 2px 5px gray; }",
+      "value": "none | [inset? <length>{2,4} <color>?]#"
+    },
+    {
+      "id": 113,
+      "letter": "B",
+      "property": "box-sizing",
+      "definition": "Defines how width/height of an element are calculated.",
+      "example": ".box { box-sizing: border-box; }",
+      "value": "content-box | border-box"
+    },
+    {
+      "id": 114,
+      "letter": "B",
+      "property": "break-after",
+      "definition": "Specifies how page/column/region breaks behave after an element.",
+      "example": ".box { break-after: avoid; }",
+      "value": "auto | avoid | always | all | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region"
+    },
+    {
+      "id": 115,
+      "letter": "B",
+      "property": "break-before",
+      "definition": "Specifies how page/column/region breaks behave before an element.",
+      "example": ".box { break-before: page; }",
+      "value": "auto | avoid | always | all | avoid-page | page | left | right | recto | verso | avoid-column | column | avoid-region | region"
+    },
+    {
+      "id": 116,
+      "letter": "B",
+      "property": "break-inside",
+      "definition": "Specifies how page/column/region breaks behave inside an element.",
+      "example": ".box { break-inside: avoid; }",
+      "value": "auto | avoid | avoid-page | avoid-column | avoid-region"
+    },
+    {
+      "id": 117,
+      "letter": "C",
+      "property": "caption-side",
+      "definition": "Specifies the placement of a table caption.",
+      "example": "caption { caption-side: bottom; }",
+      "value": "top | bottom"
+    },
+    {
+      "id": 118,
+      "letter": "C",
+      "property": "caret",
+      "definition": "Shorthand for caret-color and caret-shape.",
+      "example": "input { caret: red bar; }",
+      "value": "<caret-color> || <caret-shape>"
+    },
+    {
+      "id": 119,
+      "letter": "C",
+      "property": "caret-animation",
+      "definition": "Controls whether the text input caret blinks.",
+      "example": "input { caret-animation: manual; }",
+      "value": "auto | manual"
+    },
+    {
+      "id": 120,
+      "letter": "C",
+      "property": "caret-color",
+      "definition": "Sets the color of the text input cursor.",
+      "example": "input { caret-color: red; }",
+      "value": "auto | <color>"
+    },
+    {
+      "id": 121,
+      "letter": "C",
+      "property": "caret-shape",
+      "definition": "Sets the shape of the text input caret.",
+      "example": "input { caret-shape: block; }",
+      "value": "auto | bar | block | underscore"
+    },
+    {
+      "id": 122,
+      "letter": "C",
+      "property": "clear",
+      "definition": "Specifies which sides floating elements are not allowed on.",
+      "example": ".box { clear: both; }",
+      "value": "none | left | right | both | inline-start | inline-end"
+    },
+    {
+      "id": 123,
+      "letter": "C",
+      "property": "clip-path",
+      "definition": "Creates a clipping region for an element.",
+      "example": ".box { clip-path: circle(50%); }",
+      "value": "none | <clip-source> | <basic-shape> || <geometry-box>"
+    },
+    {
+      "id": 124,
+      "letter": "C",
+      "property": "clip-rule",
+      "definition": "Determines the algorithm used to define the inside part of an SVG shape for clipping.",
+      "example": "path { clip-rule: evenodd; }",
+      "value": "nonzero | evenodd"
+    },
+    {
+      "id": 125,
+      "letter": "C",
+      "property": "color",
+      "definition": "Sets the text color of an element.",
+      "example": "p { color: #333; }",
+      "value": "<color>"
+    },
+    {
+      "id": 126,
+      "letter": "C",
+      "property": "color-interpolation",
+      "definition": "Specifies the color space for gradient/blending calculations in SVG.",
+      "example": "svg { color-interpolation: sRGB; }",
+      "value": "auto | sRGB | linearRGB"
+    },
+    {
+      "id": 127,
+      "letter": "C",
+      "property": "color-interpolation-filters",
+      "definition": "Specifies the color space for SVG filter effect calculations.",
+      "example": "filter { color-interpolation-filters: linearRGB; }",
+      "value": "auto | sRGB | linearRGB"
+    },
+    {
+      "id": 128,
+      "letter": "C",
+      "property": "color-scheme",
+      "definition": "Indicates which color schemes an element can be rendered with.",
+      "example": ":root { color-scheme: dark light; }",
+      "value": "normal | [light | dark | <custom-ident>]+ && only?"
+    },
+    {
+      "id": 129,
+      "letter": "C",
+      "property": "column-count",
+      "definition": "Specifies the number of columns an element should be divided into.",
+      "example": ".box { column-count: 3; }",
+      "value": "auto | <integer>"
+    },
+    {
+      "id": 130,
+      "letter": "C",
+      "property": "column-fill",
+      "definition": "Specifies how content is balanced across columns.",
+      "example": ".box { column-fill: balance; }",
+      "value": "auto | balance | balance-all"
+    },
+    {
+      "id": 131,
+      "letter": "C",
+      "property": "column-gap",
+      "definition": "Sets the gap between columns.",
+      "example": ".box { column-gap: 20px; }",
+      "value": "normal | <length-percentage>"
+    },
+    {
+      "id": 132,
+      "letter": "C",
+      "property": "column-height",
+      "definition": "Sets the height of a multicol container's columns.",
+      "example": ".box { column-height: 300px; }",
+      "value": "auto | <length>"
+    },
+    {
+      "id": 133,
+      "letter": "C",
+      "property": "column-rule",
+      "definition": "Shorthand for column-rule properties.",
+      "example": ".box { column-rule: 1px solid gray; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 134,
+      "letter": "C",
+      "property": "column-rule-break",
+      "definition": "Specifies whether a column rule breaks at each row of a multicol container.",
+      "example": ".box { column-rule-break: spanning-item; }",
+      "value": "none | intersection | spanning-item"
+    },
+    {
+      "id": 135,
+      "letter": "C",
+      "property": "column-rule-color",
+      "definition": "Sets the color of the rule between columns.",
+      "example": ".box { column-rule-color: gray; }",
+      "value": "<color>"
+    },
+    {
+      "id": 136,
+      "letter": "C",
+      "property": "column-rule-style",
+      "definition": "Sets the style of the rule between columns.",
+      "example": ".box { column-rule-style: solid; }",
+      "value": "<line-style>"
+    },
+    {
+      "id": 137,
+      "letter": "C",
+      "property": "column-rule-visibility-items",
+      "definition": "Controls the visibility of column rules between empty items.",
+      "example": ".box { column-rule-visibility-items: covered-items; }",
+      "value": "covered-items | uncovered-items"
+    },
+    {
+      "id": 138,
+      "letter": "C",
+      "property": "column-rule-width",
+      "definition": "Sets the width of the rule between columns.",
+      "example": ".box { column-rule-width: 2px; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 139,
+      "letter": "C",
+      "property": "column-span",
+      "definition": "Specifies how many columns an element should span.",
+      "example": ".box { column-span: all; }",
+      "value": "none | all"
+    },
+    {
+      "id": 140,
+      "letter": "C",
+      "property": "column-width",
+      "definition": "Specifies the ideal width of columns.",
+      "example": ".box { column-width: 200px; }",
+      "value": "auto | <length>"
+    },
+    {
+      "id": 141,
+      "letter": "C",
+      "property": "column-wrap",
+      "definition": "Specifies whether a multicol container wraps its columns into multiple rows.",
+      "example": ".box { column-wrap: wrap; }",
+      "value": "nowrap | wrap"
+    },
+    {
+      "id": 142,
+      "letter": "C",
+      "property": "columns",
+      "definition": "Shorthand for column-width and column-count.",
+      "example": ".box { columns: 3 200px; }",
+      "value": "<column-width> || <column-count>"
+    },
+    {
+      "id": 143,
+      "letter": "C",
+      "property": "contain",
+      "definition": "Indicates that an element's subtree is independent of the rest of the page, for performance.",
+      "example": ".widget { contain: layout paint; }",
+      "value": "none | strict | content | [size || inline-size || layout || style || paint]"
+    },
+    {
+      "id": 144,
+      "letter": "C",
+      "property": "contain-intrinsic-block-size",
+      "definition": "Sets the intrinsic block-size a contained element uses when its size is not determinable.",
+      "example": ".box { contain-intrinsic-block-size: 300px; }",
+      "value": "none | <length> | auto <length>"
+    },
+    {
+      "id": 145,
+      "letter": "C",
+      "property": "contain-intrinsic-height",
+      "definition": "Sets the intrinsic height a contained element uses when its size is not determinable.",
+      "example": ".box { contain-intrinsic-height: 300px; }",
+      "value": "none | <length> | auto <length>"
+    },
+    {
+      "id": 146,
+      "letter": "C",
+      "property": "contain-intrinsic-inline-size",
+      "definition": "Sets the intrinsic inline-size a contained element uses when its size is not determinable.",
+      "example": ".box { contain-intrinsic-inline-size: 300px; }",
+      "value": "none | <length> | auto <length>"
+    },
+    {
+      "id": 147,
+      "letter": "C",
+      "property": "contain-intrinsic-size",
+      "definition": "Shorthand for contain-intrinsic-width and contain-intrinsic-height.",
+      "example": ".box { contain-intrinsic-size: 300px 200px; }",
+      "value": "none | <length> | auto <length> [applied to each axis]"
+    },
+    {
+      "id": 148,
+      "letter": "C",
+      "property": "contain-intrinsic-width",
+      "definition": "Sets the intrinsic width a contained element uses when its size is not determinable.",
+      "example": ".box { contain-intrinsic-width: 300px; }",
+      "value": "none | <length> | auto <length>"
+    },
+    {
+      "id": 149,
+      "letter": "C",
+      "property": "container",
+      "definition": "Shorthand for container-name and container-type, establishing a container-query container.",
+      "example": ".box { container: sidebar / inline-size; }",
+      "value": "<container-name> [/ <container-type>]?"
+    },
+    {
+      "id": 150,
+      "letter": "C",
+      "property": "container-name",
+      "definition": "Names an element as a query container for container queries.",
+      "example": ".box { container-name: sidebar; }",
+      "value": "none | <custom-ident>+"
+    },
+    {
+      "id": 151,
+      "letter": "C",
+      "property": "container-type",
+      "definition": "Establishes an element as a query container for container queries.",
+      "example": ".box { container-type: inline-size; }",
+      "value": "normal | size | inline-size | scroll-state"
+    },
+    {
+      "id": 152,
+      "letter": "C",
+      "property": "content",
+      "definition": "Used with pseudo-elements to insert generated content.",
+      "example": ".box::before { content: 'Note: '; }",
+      "value": "normal | none | <content-list> | <string> | <image> | counter() | attr()"
+    },
+    {
+      "id": 153,
+      "letter": "C",
+      "property": "content-visibility",
+      "definition": "Controls whether an element renders its contents, enabling rendering skips for offscreen content.",
+      "example": ".box { content-visibility: auto; }",
+      "value": "visible | auto | hidden"
+    },
+    {
+      "id": 154,
+      "letter": "C",
+      "property": "corner-block-end-shape",
+      "definition": "Sets the shape of corners at the block-end edge of a box.",
+      "example": ".box { corner-block-end-shape: notch; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 155,
+      "letter": "C",
+      "property": "corner-block-start-shape",
+      "definition": "Sets the shape of corners at the block-start edge of a box.",
+      "example": ".box { corner-block-start-shape: scoop; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 156,
+      "letter": "C",
+      "property": "corner-bottom-left-shape",
+      "definition": "Sets the shape of the bottom-left corner of a box.",
+      "example": ".box { corner-bottom-left-shape: bevel; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 157,
+      "letter": "C",
+      "property": "corner-bottom-right-shape",
+      "definition": "Sets the shape of the bottom-right corner of a box.",
+      "example": ".box { corner-bottom-right-shape: bevel; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 158,
+      "letter": "C",
+      "property": "corner-bottom-shape",
+      "definition": "Sets the shape of both bottom corners of a box.",
+      "example": ".box { corner-bottom-shape: round; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 159,
+      "letter": "C",
+      "property": "corner-end-end-shape",
+      "definition": "Sets the shape of the corner at the end of the block and inline directions.",
+      "example": ".box { corner-end-end-shape: squircle; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 160,
+      "letter": "C",
+      "property": "corner-end-start-shape",
+      "definition": "Sets the shape of the corner at the end of the block and start of the inline direction.",
+      "example": ".box { corner-end-start-shape: squircle; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 161,
+      "letter": "C",
+      "property": "corner-inline-end-shape",
+      "definition": "Sets the shape of corners at the inline-end edge of a box.",
+      "example": ".box { corner-inline-end-shape: notch; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 162,
+      "letter": "C",
+      "property": "corner-inline-start-shape",
+      "definition": "Sets the shape of corners at the inline-start edge of a box.",
+      "example": ".box { corner-inline-start-shape: notch; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 163,
+      "letter": "C",
+      "property": "corner-left-shape",
+      "definition": "Sets the shape of both left corners of a box.",
+      "example": ".box { corner-left-shape: round; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 164,
+      "letter": "C",
+      "property": "corner-right-shape",
+      "definition": "Sets the shape of both right corners of a box.",
+      "example": ".box { corner-right-shape: round; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 165,
+      "letter": "C",
+      "property": "corner-shape",
+      "definition": "Shorthand setting the shape of all four corners of a box (e.g. rounded, notched, scooped).",
+      "example": ".box { corner-shape: notch; border-radius: 20px; }",
+      "value": "[round | scoop | bevel | notch | squircle | superellipse() | straight]{1,4}"
+    },
+    {
+      "id": 166,
+      "letter": "C",
+      "property": "corner-start-end-shape",
+      "definition": "Sets the shape of the corner at the start of the block and end of the inline direction.",
+      "example": ".box { corner-start-end-shape: squircle; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 167,
+      "letter": "C",
+      "property": "corner-start-start-shape",
+      "definition": "Sets the shape of the corner at the start of the block and inline directions.",
+      "example": ".box { corner-start-start-shape: squircle; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 168,
+      "letter": "C",
+      "property": "corner-top-left-shape",
+      "definition": "Sets the shape of the top-left corner of a box.",
+      "example": ".box { corner-top-left-shape: bevel; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 169,
+      "letter": "C",
+      "property": "corner-top-right-shape",
+      "definition": "Sets the shape of the top-right corner of a box.",
+      "example": ".box { corner-top-right-shape: bevel; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 170,
+      "letter": "C",
+      "property": "corner-top-shape",
+      "definition": "Sets the shape of both top corners of a box.",
+      "example": ".box { corner-top-shape: round; }",
+      "value": "round | scoop | bevel | notch | squircle | superellipse() | straight"
+    },
+    {
+      "id": 171,
+      "letter": "C",
+      "property": "counter-increment",
+      "definition": "Increases or decreases the value of CSS counters.",
+      "example": "li { counter-increment: item; }",
+      "value": "[<custom-ident> <integer>?]+ | none"
+    },
+    {
+      "id": 172,
+      "letter": "C",
+      "property": "counter-reset",
+      "definition": "Creates or resets a CSS counter.",
+      "example": "ol { counter-reset: item; }",
+      "value": "[<custom-ident> <integer>? | reversed(<custom-ident>) <integer>?]+ | none"
+    },
+    {
+      "id": 173,
+      "letter": "C",
+      "property": "counter-set",
+      "definition": "Sets a CSS counter to a given value.",
+      "example": "li { counter-set: item 5; }",
+      "value": "[<custom-ident> <integer>?]+ | none"
+    },
+    {
+      "id": 174,
+      "letter": "C",
+      "property": "cursor",
+      "definition": "Specifies the mouse cursor shown when hovering an element.",
+      "example": "button { cursor: pointer; }",
+      "value": "auto | default | pointer | wait | text | move | not-allowed | grab | crosshair | help | zoom-in | <url> ... etc."
+    },
+    {
+      "id": 175,
+      "letter": "C",
+      "property": "cx",
+      "definition": "Sets the x-axis center coordinate of an SVG circle/ellipse.",
+      "example": "circle { cx: 50; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 176,
+      "letter": "C",
+      "property": "cy",
+      "definition": "Sets the y-axis center coordinate of an SVG circle/ellipse.",
+      "example": "circle { cy: 50; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 177,
+      "letter": "D",
+      "property": "d",
+      "definition": "Defines a path to be drawn for an SVG path element.",
+      "example": "path { d: path('M10 10 H90 V90 H10 Z'); }",
+      "value": "none | path(<string>)"
+    },
+    {
+      "id": 178,
+      "letter": "D",
+      "property": "direction",
+      "definition": "Sets the text direction of an element.",
+      "example": "p { direction: rtl; }",
+      "value": "ltr | rtl"
+    },
+    {
+      "id": 179,
+      "letter": "D",
+      "property": "display",
+      "definition": "Specifies the display behavior of an element.",
+      "example": ".box { display: flex; }",
+      "value": "block | inline | inline-block | flex | inline-flex | grid | inline-grid | none | contents | table | flow-root | list-item"
+    },
+    {
+      "id": 180,
+      "letter": "D",
+      "property": "dominant-baseline",
+      "definition": "Specifies the dominant baseline used to align text and inline-level content in SVG.",
+      "example": "text { dominant-baseline: middle; }",
+      "value": "auto | text-bottom | alphabetic | ideographic | middle | central | mathematical | hanging | text-top"
+    },
+    {
+      "id": 181,
+      "letter": "D",
+      "property": "dynamic-range-limit",
+      "definition": "Limits the dynamic range of colors on a high-dynamic-range display.",
+      "example": ":root { dynamic-range-limit: standard; }",
+      "value": "standard | high | constrained-high"
+    },
+    {
+      "id": 182,
+      "letter": "E",
+      "property": "empty-cells",
+      "definition": "Specifies whether borders/backgrounds are shown on empty table cells.",
+      "example": "table { empty-cells: hide; }",
+      "value": "show | hide"
+    },
+    {
+      "id": 183,
+      "letter": "F",
+      "property": "field-sizing",
+      "definition": "Controls whether a form control's size is fixed or adjusts to its content.",
+      "example": "textarea { field-sizing: content; }",
+      "value": "fixed | content"
+    },
+    {
+      "id": 184,
+      "letter": "F",
+      "property": "fill",
+      "definition": "Sets the color used to paint the interior of an SVG shape.",
+      "example": "path { fill: blue; }",
+      "value": "none | <color> | <url> | context-fill | context-stroke"
+    },
+    {
+      "id": 185,
+      "letter": "F",
+      "property": "fill-opacity",
+      "definition": "Sets the opacity of the fill of an SVG shape.",
+      "example": "path { fill-opacity: 0.5; }",
+      "value": "<number> | <percentage>"
+    },
+    {
+      "id": 186,
+      "letter": "F",
+      "property": "fill-rule",
+      "definition": "Determines the algorithm used to determine the interior of an SVG shape.",
+      "example": "path { fill-rule: evenodd; }",
+      "value": "nonzero | evenodd"
+    },
+    {
+      "id": 187,
+      "letter": "F",
+      "property": "filter",
+      "definition": "Applies graphical effects like blur or color shifting.",
+      "example": "img { filter: grayscale(100%); }",
+      "value": "none | <filter-function>+ | <url>"
+    },
+    {
+      "id": 188,
+      "letter": "F",
+      "property": "flex",
+      "definition": "Shorthand for flex-grow, flex-shrink, and flex-basis.",
+      "example": ".item { flex: 1 1 auto; }",
+      "value": "none | [<flex-grow> <flex-shrink>? || <flex-basis>]"
+    },
+    {
+      "id": 189,
+      "letter": "F",
+      "property": "flex-basis",
+      "definition": "Specifies the initial main size of a flex item.",
+      "example": ".item { flex-basis: 200px; }",
+      "value": "content | <width>"
+    },
+    {
+      "id": 190,
+      "letter": "F",
+      "property": "flex-direction",
+      "definition": "Specifies the direction of flex items in a flex container.",
+      "example": ".container { flex-direction: column; }",
+      "value": "row | row-reverse | column | column-reverse"
+    },
+    {
+      "id": 191,
+      "letter": "F",
+      "property": "flex-flow",
+      "definition": "Shorthand for flex-direction and flex-wrap.",
+      "example": ".container { flex-flow: row wrap; }",
+      "value": "<flex-direction> || <flex-wrap>"
+    },
+    {
+      "id": 192,
+      "letter": "F",
+      "property": "flex-grow",
+      "definition": "Specifies how much a flex item grows relative to others.",
+      "example": ".item { flex-grow: 1; }",
+      "value": "<number>"
+    },
+    {
+      "id": 193,
+      "letter": "F",
+      "property": "flex-line-count",
+      "definition": "Constrains the number of lines a flex container's items wrap onto.",
+      "example": ".container { flex-line-count: 2; }",
+      "value": "none | <integer>"
+    },
+    {
+      "id": 194,
+      "letter": "F",
+      "property": "flex-shrink",
+      "definition": "Specifies how much a flex item shrinks relative to others.",
+      "example": ".item { flex-shrink: 0; }",
+      "value": "<number>"
+    },
+    {
+      "id": 195,
+      "letter": "F",
+      "property": "flex-wrap",
+      "definition": "Specifies whether flex items wrap onto multiple lines.",
+      "example": ".container { flex-wrap: wrap; }",
+      "value": "nowrap | wrap | wrap-reverse"
+    },
+    {
+      "id": 196,
+      "letter": "F",
+      "property": "float",
+      "definition": "Places an element on the left or right of its container.",
+      "example": "img { float: left; }",
+      "value": "left | right | none | inline-start | inline-end"
+    },
+    {
+      "id": 197,
+      "letter": "F",
+      "property": "flood-color",
+      "definition": "Defines the color used to flood an SVG filter primitive subregion.",
+      "example": "feFlood { flood-color: orange; }",
+      "value": "<color>"
+    },
+    {
+      "id": 198,
+      "letter": "F",
+      "property": "flood-opacity",
+      "definition": "Defines the opacity used to flood an SVG filter primitive subregion.",
+      "example": "feFlood { flood-opacity: 0.5; }",
+      "value": "<number> | <percentage>"
+    },
+    {
+      "id": 199,
+      "letter": "F",
+      "property": "font",
+      "definition": "Shorthand for font-related properties.",
+      "example": "p { font: italic bold 16px Arial; }",
+      "value": "<font-style> || <font-variant> || <font-weight> || <font-size> [/ <line-height>]? <font-family> | caption | icon | menu | message-box | small-caption | status-bar"
+    },
+    {
+      "id": 200,
+      "letter": "F",
+      "property": "font-family",
+      "definition": "Specifies the font for an element.",
+      "example": "p { font-family: Arial, sans-serif; }",
+      "value": "[<generic-family> | <family-name>]#"
+    },
+    {
+      "id": 201,
+      "letter": "F",
+      "property": "font-feature-settings",
+      "definition": "Controls advanced typographic features in OpenType fonts.",
+      "example": "p { font-feature-settings: 'liga' 1; }",
+      "value": "normal | <feature-tag-value>#"
+    },
+    {
+      "id": 202,
+      "letter": "F",
+      "property": "font-kerning",
+      "definition": "Controls the use of kerning information in a font.",
+      "example": "p { font-kerning: normal; }",
+      "value": "auto | normal | none"
+    },
+    {
+      "id": 203,
+      "letter": "F",
+      "property": "font-language-override",
+      "definition": "Forces a font to use a specific language's glyph rules.",
+      "example": "p { font-language-override: 'ENG'; }",
+      "value": "normal | <string>"
+    },
+    {
+      "id": 204,
+      "letter": "F",
+      "property": "font-optical-sizing",
+      "definition": "Controls whether an optical-sizing-enabled font adjusts its glyphs for the size used.",
+      "example": "p { font-optical-sizing: auto; }",
+      "value": "auto | none"
+    },
+    {
+      "id": 205,
+      "letter": "F",
+      "property": "font-palette",
+      "definition": "Selects a color palette to use with a color font.",
+      "example": "h1 { font-palette: --my-palette; }",
+      "value": "normal | light | dark | <palette-identifier>"
+    },
+    {
+      "id": 206,
+      "letter": "F",
+      "property": "font-size",
+      "definition": "Sets the size of the font.",
+      "example": "p { font-size: 16px; }",
+      "value": "<absolute-size> | <relative-size> | <length-percentage>"
+    },
+    {
+      "id": 207,
+      "letter": "F",
+      "property": "font-size-adjust",
+      "definition": "Preserves readability of text when font fallback occurs.",
+      "example": "p { font-size-adjust: 0.5; }",
+      "value": "none | [ex-height | cap-height | ch-width | ic-width | ic-height]? <number>"
+    },
+    {
+      "id": 208,
+      "letter": "F",
+      "property": "font-stretch",
+      "definition": "Selects a normal, condensed, or expanded font variant.",
+      "example": "p { font-stretch: condensed; }",
+      "value": "normal | <percentage> | ultra-condensed | extra-condensed | condensed | semi-condensed | semi-expanded | expanded | extra-expanded | ultra-expanded"
+    },
+    {
+      "id": 209,
+      "letter": "F",
+      "property": "font-style",
+      "definition": "Specifies the font style (normal, italic, oblique).",
+      "example": "p { font-style: italic; }",
+      "value": "normal | italic | oblique <angle>?"
+    },
+    {
+      "id": 210,
+      "letter": "F",
+      "property": "font-synthesis",
+      "definition": "Controls which missing typefaces (bold, italic, etc.) the browser is allowed to synthesize.",
+      "example": "p { font-synthesis: none; }",
+      "value": "none | [weight || style || small-caps || position]"
+    },
+    {
+      "id": 211,
+      "letter": "F",
+      "property": "font-synthesis-position",
+      "definition": "Controls whether the browser synthesizes subscript/superscript glyphs when unsupported.",
+      "example": "p { font-synthesis-position: none; }",
+      "value": "auto | none"
+    },
+    {
+      "id": 212,
+      "letter": "F",
+      "property": "font-synthesis-small-caps",
+      "definition": "Controls whether the browser synthesizes small-caps glyphs when unsupported.",
+      "example": "p { font-synthesis-small-caps: none; }",
+      "value": "auto | none"
+    },
+    {
+      "id": 213,
+      "letter": "F",
+      "property": "font-synthesis-style",
+      "definition": "Controls whether the browser synthesizes oblique typefaces when unsupported.",
+      "example": "p { font-synthesis-style: none; }",
+      "value": "auto | none"
+    },
+    {
+      "id": 214,
+      "letter": "F",
+      "property": "font-synthesis-weight",
+      "definition": "Controls whether the browser synthesizes bold typefaces when unsupported.",
+      "example": "p { font-synthesis-weight: none; }",
+      "value": "auto | none"
+    },
+    {
+      "id": 215,
+      "letter": "F",
+      "property": "font-variant",
+      "definition": "Specifies whether text should be in small-caps.",
+      "example": "p { font-variant: small-caps; }",
+      "value": "normal | none | [ligatures || caps || numeric || east-asian || position]"
+    },
+    {
+      "id": 216,
+      "letter": "F",
+      "property": "font-variant-alternates",
+      "definition": "Controls the use of alternate glyphs defined via font-feature-values.",
+      "example": "p { font-variant-alternates: historical-forms; }",
+      "value": "normal | historical-forms | stylistic() | styleset() | character-variant() | swash() | ornaments() | annotation()"
+    },
+    {
+      "id": 217,
+      "letter": "F",
+      "property": "font-variant-caps",
+      "definition": "Controls the use of alternate capital glyphs.",
+      "example": "p { font-variant-caps: small-caps; }",
+      "value": "normal | small-caps | all-small-caps | petite-caps | all-petite-caps | unicase | titling-caps"
+    },
+    {
+      "id": 218,
+      "letter": "F",
+      "property": "font-variant-east-asian",
+      "definition": "Controls the use of alternate glyphs for East Asian scripts.",
+      "example": "p { font-variant-east-asian: jis78; }",
+      "value": "normal | [jis78|jis83|jis90|jis04|simplified|traditional] || [full-width|proportional-width] || ruby"
+    },
+    {
+      "id": 219,
+      "letter": "F",
+      "property": "font-variant-emoji",
+      "definition": "Specifies a preference for displaying emoji as emoji or as text.",
+      "example": "p { font-variant-emoji: emoji; }",
+      "value": "normal | text | emoji | unicode"
+    },
+    {
+      "id": 220,
+      "letter": "F",
+      "property": "font-variant-ligatures",
+      "definition": "Controls which ligatures are used in text.",
+      "example": "p { font-variant-ligatures: common-ligatures; }",
+      "value": "normal | none | [common-ligatures|no-common-ligatures] || [discretionary-ligatures|no-discretionary-ligatures] || [historical-ligatures|no-historical-ligatures] || [contextual|no-contextual]"
+    },
+    {
+      "id": 221,
+      "letter": "F",
+      "property": "font-variant-numeric",
+      "definition": "Controls the usage of alternate glyphs for numbers, fractions, and ordinals.",
+      "example": "p { font-variant-numeric: ordinal; }",
+      "value": "normal | [lining-nums|oldstyle-nums] || [proportional-nums|tabular-nums] || [diagonal-fractions|stacked-fractions] || ordinal || slashed-zero"
+    },
+    {
+      "id": 222,
+      "letter": "F",
+      "property": "font-variant-position",
+      "definition": "Controls the use of alternate glyphs of smaller size positioned as subscript/superscript.",
+      "example": "p { font-variant-position: sub; }",
+      "value": "normal | sub | super"
+    },
+    {
+      "id": 223,
+      "letter": "F",
+      "property": "font-variation-settings",
+      "definition": "Provides low-level control over variable font axes.",
+      "example": "p { font-variation-settings: 'wght' 700; }",
+      "value": "normal | [<string> <number>]#"
+    },
+    {
+      "id": 224,
+      "letter": "F",
+      "property": "font-weight",
+      "definition": "Specifies the weight (boldness) of the font.",
+      "example": "p { font-weight: bold; }",
+      "value": "normal | bold | bolder | lighter | <number 1-1000>"
+    },
+    {
+      "id": 225,
+      "letter": "F",
+      "property": "font-width",
+      "definition": "Selects a normal, condensed, or expanded face from a font (modern name for font-stretch).",
+      "example": "p { font-width: condensed; }",
+      "value": "normal | <percentage> | ultra-condensed ... ultra-expanded (same as font-stretch)"
+    },
+    {
+      "id": 226,
+      "letter": "F",
+      "property": "forced-color-adjust",
+      "definition": "Allows opting an element out of forced-colors accessibility mode adjustments.",
+      "example": ".box { forced-color-adjust: none; }",
+      "value": "auto | none | preserve-parent-color"
+    },
+    {
+      "id": 227,
+      "letter": "F",
+      "property": "frame-sizing",
+      "definition": "Controls how a scaled element's frame sizing behaves.",
+      "example": ".box { frame-sizing: fixed; }",
+      "value": "fixed | content"
+    },
+    {
+      "id": 228,
+      "letter": "G",
+      "property": "gap",
+      "definition": "Shorthand for row-gap and column-gap.",
+      "example": ".container { gap: 10px 20px; }",
+      "value": "<row-gap> <column-gap>?"
+    },
+    {
+      "id": 229,
+      "letter": "G",
+      "property": "grid",
+      "definition": "Shorthand for all grid properties.",
+      "example": ".container { grid: auto-flow / 1fr 1fr; }",
+      "value": "<grid-template> | <grid-template-rows> / [auto-flow && dense?] <grid-auto-columns>?"
+    },
+    {
+      "id": 230,
+      "letter": "G",
+      "property": "grid-area",
+      "definition": "Specifies a grid item's size and location.",
+      "example": ".item { grid-area: 1 / 1 / 3 / 3; }",
+      "value": "<grid-line> [/ <grid-line>]{0,3}"
+    },
+    {
+      "id": 231,
+      "letter": "G",
+      "property": "grid-auto-columns",
+      "definition": "Specifies the size of implicitly created grid columns.",
+      "example": ".container { grid-auto-columns: 100px; }",
+      "value": "<track-size>+"
+    },
+    {
+      "id": 232,
+      "letter": "G",
+      "property": "grid-auto-flow",
+      "definition": "Controls how auto-placed items flow in the grid.",
+      "example": ".container { grid-auto-flow: row; }",
+      "value": "[row | column] || dense"
+    },
+    {
+      "id": 233,
+      "letter": "G",
+      "property": "grid-auto-rows",
+      "definition": "Specifies the size of implicitly created grid rows.",
+      "example": ".container { grid-auto-rows: 100px; }",
+      "value": "<track-size>+"
+    },
+    {
+      "id": 234,
+      "letter": "G",
+      "property": "grid-column",
+      "definition": "Shorthand for grid-column-start and grid-column-end.",
+      "example": ".item { grid-column: 1 / 3; }",
+      "value": "<grid-line> [/ <grid-line>]?"
+    },
+    {
+      "id": 235,
+      "letter": "G",
+      "property": "grid-column-end",
+      "definition": "Specifies where a grid item ends on the column axis.",
+      "example": ".item { grid-column-end: 3; }",
+      "value": "auto | <custom-ident> | <integer> && <custom-ident>? | span"
+    },
+    {
+      "id": 236,
+      "letter": "G",
+      "property": "grid-column-start",
+      "definition": "Specifies where a grid item starts on the column axis.",
+      "example": ".item { grid-column-start: 1; }",
+      "value": "auto | <custom-ident> | <integer> && <custom-ident>? | span"
+    },
+    {
+      "id": 237,
+      "letter": "G",
+      "property": "grid-row",
+      "definition": "Shorthand for grid-row-start and grid-row-end.",
+      "example": ".item { grid-row: 1 / 3; }",
+      "value": "<grid-line> [/ <grid-line>]?"
+    },
+    {
+      "id": 238,
+      "letter": "G",
+      "property": "grid-row-end",
+      "definition": "Specifies where a grid item ends on the row axis.",
+      "example": ".item { grid-row-end: 3; }",
+      "value": "auto | <custom-ident> | <integer> && <custom-ident>? | span"
+    },
+    {
+      "id": 239,
+      "letter": "G",
+      "property": "grid-row-start",
+      "definition": "Specifies where a grid item starts on the row axis.",
+      "example": ".item { grid-row-start: 1; }",
+      "value": "auto | <custom-ident> | <integer> && <custom-ident>? | span"
+    },
+    {
+      "id": 240,
+      "letter": "G",
+      "property": "grid-template",
+      "definition": "Shorthand for grid-template-rows, columns, and areas.",
+      "example": ".container { grid-template: 1fr / 1fr 1fr; }",
+      "value": "none | <grid-template-rows> / <grid-template-columns> | <grid-template-areas>"
+    },
+    {
+      "id": 241,
+      "letter": "G",
+      "property": "grid-template-areas",
+      "definition": "Defines named grid areas.",
+      "example": ".container { grid-template-areas: 'a b'; }",
+      "value": "none | <string>+"
+    },
+    {
+      "id": 242,
+      "letter": "G",
+      "property": "grid-template-columns",
+      "definition": "Defines the columns of a grid.",
+      "example": ".container { grid-template-columns: 1fr 1fr; }",
+      "value": "none | <track-list> | subgrid"
+    },
+    {
+      "id": 243,
+      "letter": "G",
+      "property": "grid-template-rows",
+      "definition": "Defines the rows of a grid.",
+      "example": ".container { grid-template-rows: 100px 200px; }",
+      "value": "none | <track-list> | subgrid"
+    },
+    {
+      "id": 244,
+      "letter": "H",
+      "property": "hanging-punctuation",
+      "definition": "Determines whether punctuation marks may hang outside a line's content box.",
+      "example": "p { hanging-punctuation: first; }",
+      "value": "none | [first || [force-end | allow-end] || last]"
+    },
+    {
+      "id": 245,
+      "letter": "H",
+      "property": "height",
+      "definition": "Sets the height of an element.",
+      "example": ".box { height: 200px; }",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 246,
+      "letter": "H",
+      "property": "hyphenate-character",
+      "definition": "Sets the character shown at the end of a hyphenated line break.",
+      "example": "p { hyphenate-character: '~'; }",
+      "value": "auto | <string>"
+    },
+    {
+      "id": 247,
+      "letter": "H",
+      "property": "hyphenate-limit-chars",
+      "definition": "Sets minimum word-length rules for automatic hyphenation.",
+      "example": "p { hyphenate-limit-chars: 6 3 3; }",
+      "value": "[auto | <integer>]{1,3}"
+    },
+    {
+      "id": 248,
+      "letter": "H",
+      "property": "hyphens",
+      "definition": "Controls automatic hyphenation of text.",
+      "example": "p { hyphens: auto; }",
+      "value": "none | manual | auto"
+    },
+    {
+      "id": 249,
+      "letter": "I",
+      "property": "image-orientation",
+      "definition": "Specifies a rotation applied to an image before it's laid out.",
+      "example": "img { image-orientation: from-image; }",
+      "value": "from-image | none | <angle>"
+    },
+    {
+      "id": 250,
+      "letter": "I",
+      "property": "image-rendering",
+      "definition": "Provides a hint on how to render images.",
+      "example": "img { image-rendering: pixelated; }",
+      "value": "auto | smooth | high-quality | pixelated | crisp-edges"
+    },
+    {
+      "id": 251,
+      "letter": "I",
+      "property": "image-resolution",
+      "definition": "Specifies the intrinsic resolution of image content.",
+      "example": "img { image-resolution: 2dppx; }",
+      "value": "[from-image || <resolution>] && snap?"
+    },
+    {
+      "id": 252,
+      "letter": "I",
+      "property": "initial-letter",
+      "definition": "Styles the first letter or line of a block like a drop cap.",
+      "example": "p::first-letter { initial-letter: 3; }",
+      "value": "normal | <number> <integer>?"
+    },
+    {
+      "id": 253,
+      "letter": "I",
+      "property": "inline-size",
+      "definition": "Defines the size of an element's inline dimension.",
+      "example": ".box { inline-size: 300px; }",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 254,
+      "letter": "I",
+      "property": "inset",
+      "definition": "Shorthand for top, right, bottom, left.",
+      "example": ".box { position: absolute; inset: 0; }",
+      "value": "<top>{1,4}"
+    },
+    {
+      "id": 255,
+      "letter": "I",
+      "property": "inset-block",
+      "definition": "Shorthand for inset-block-start and inset-block-end.",
+      "example": ".box { inset-block: 10px 20px; }",
+      "value": "<length-percentage>{1,2} | auto"
+    },
+    {
+      "id": 256,
+      "letter": "I",
+      "property": "inset-block-end",
+      "definition": "Sets the logical block-end inset of a positioned element.",
+      "example": ".box { inset-block-end: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 257,
+      "letter": "I",
+      "property": "inset-block-start",
+      "definition": "Sets the logical block-start inset of a positioned element.",
+      "example": ".box { inset-block-start: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 258,
+      "letter": "I",
+      "property": "inset-inline",
+      "definition": "Shorthand for inset-inline-start and inset-inline-end.",
+      "example": ".box { inset-inline: 10px 20px; }",
+      "value": "<length-percentage>{1,2} | auto"
+    },
+    {
+      "id": 259,
+      "letter": "I",
+      "property": "inset-inline-end",
+      "definition": "Sets the logical inline-end inset of a positioned element.",
+      "example": ".box { inset-inline-end: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 260,
+      "letter": "I",
+      "property": "inset-inline-start",
+      "definition": "Sets the logical inline-start inset of a positioned element.",
+      "example": ".box { inset-inline-start: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 261,
+      "letter": "I",
+      "property": "interactivity",
+      "definition": "Controls whether an element (e.g. inside a hidden popover) is interactive.",
+      "example": ".box { interactivity: inert; }",
+      "value": "auto | inert"
+    },
+    {
+      "id": 262,
+      "letter": "I",
+      "property": "interest-delay",
+      "definition": "Shorthand setting the delay before/after an interest-invoker interaction fires.",
+      "example": "a { interest-delay: 400ms; }",
+      "value": "<time>{1,2}"
+    },
+    {
+      "id": 263,
+      "letter": "I",
+      "property": "interest-delay-end",
+      "definition": "Sets the delay before an interest-invoker interaction ends.",
+      "example": "a { interest-delay-end: 200ms; }",
+      "value": "<time>"
+    },
+    {
+      "id": 264,
+      "letter": "I",
+      "property": "interest-delay-start",
+      "definition": "Sets the delay before an interest-invoker interaction starts.",
+      "example": "a { interest-delay-start: 400ms; }",
+      "value": "<time>"
+    },
+    {
+      "id": 265,
+      "letter": "I",
+      "property": "interpolate-size",
+      "definition": "Allows keyword sizes like auto to be smoothly animated/transitioned.",
+      "example": ":root { interpolate-size: allow-keywords; }",
+      "value": "numeric-only | allow-keywords"
+    },
+    {
+      "id": 266,
+      "letter": "I",
+      "property": "isolation",
+      "definition": "Determines whether an element creates a new stacking context.",
+      "example": ".box { isolation: isolate; }",
+      "value": "auto | isolate"
+    },
+    {
+      "id": 267,
+      "letter": "J",
+      "property": "justify-content",
+      "definition": "Aligns flex or grid items along the main axis.",
+      "example": ".container { justify-content: space-between; }",
+      "value": "normal | flex-start | flex-end | center | space-between | space-around | space-evenly | start | end | left | right | stretch"
+    },
+    {
+      "id": 268,
+      "letter": "J",
+      "property": "justify-items",
+      "definition": "Aligns grid items along the inline axis.",
+      "example": ".container { justify-items: center; }",
+      "value": "normal | stretch | center | start | end | self-start | self-end | left | right | baseline | legacy"
+    },
+    {
+      "id": 269,
+      "letter": "J",
+      "property": "justify-self",
+      "definition": "Overrides justify-items for a single grid item.",
+      "example": ".item { justify-self: end; }",
+      "value": "auto | normal | stretch | center | start | end | self-start | self-end | left | right | baseline"
+    },
+    {
+      "id": 270,
+      "letter": "L",
+      "property": "left",
+      "definition": "Sets the distance of a positioned element from the left.",
+      "example": ".box { position: absolute; left: 0; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 271,
+      "letter": "L",
+      "property": "letter-spacing",
+      "definition": "Sets the spacing between characters.",
+      "example": "p { letter-spacing: 2px; }",
+      "value": "normal | <length>"
+    },
+    {
+      "id": 272,
+      "letter": "L",
+      "property": "lighting-color",
+      "definition": "Defines the color of the light source for SVG lighting filter primitives.",
+      "example": "feDiffuseLighting { lighting-color: white; }",
+      "value": "<color>"
+    },
+    {
+      "id": 273,
+      "letter": "L",
+      "property": "line-break",
+      "definition": "Specifies how strict line-breaking rules are applied.",
+      "example": "p { line-break: strict; }",
+      "value": "auto | loose | normal | strict | anywhere"
+    },
+    {
+      "id": 274,
+      "letter": "L",
+      "property": "line-clamp",
+      "definition": "Limits the number of lines shown before truncating with an ellipsis.",
+      "example": "p { line-clamp: 3; }",
+      "value": "none | <integer>"
+    },
+    {
+      "id": 275,
+      "letter": "L",
+      "property": "line-height",
+      "definition": "Sets the height of a line of text.",
+      "example": "p { line-height: 1.5; }",
+      "value": "normal | <number> | <length> | <percentage>"
+    },
+    {
+      "id": 276,
+      "letter": "L",
+      "property": "line-height-step",
+      "definition": "Rounds the line height of boxes up to a multiple of this value.",
+      "example": "body { line-height-step: 20px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 277,
+      "letter": "L",
+      "property": "link-parameters",
+      "definition": "Attaches machine-readable parameters to a link for use by the user agent.",
+      "example": "a { link-parameters: --lang: en; }",
+      "value": "<dashed-ident> : <declaration-value>"
+    },
+    {
+      "id": 278,
+      "letter": "L",
+      "property": "list-style",
+      "definition": "Shorthand for list-style properties.",
+      "example": "ul { list-style: square inside; }",
+      "value": "<list-style-type> || <list-style-position> || <list-style-image>"
+    },
+    {
+      "id": 279,
+      "letter": "L",
+      "property": "list-style-image",
+      "definition": "Specifies an image as the list item marker.",
+      "example": "li { list-style-image: url(bullet.png); }",
+      "value": "none | <image>"
+    },
+    {
+      "id": 280,
+      "letter": "L",
+      "property": "list-style-position",
+      "definition": "Specifies the position of list item markers.",
+      "example": "ul { list-style-position: inside; }",
+      "value": "inside | outside"
+    },
+    {
+      "id": 281,
+      "letter": "L",
+      "property": "list-style-type",
+      "definition": "Specifies the marker type for list items.",
+      "example": "ul { list-style-type: square; }",
+      "value": "disc | circle | square | decimal | decimal-leading-zero | lower-roman | upper-roman | lower-alpha | upper-alpha | none | <string> | <custom-ident>"
+    },
+    {
+      "id": 282,
+      "letter": "M",
+      "property": "margin",
+      "definition": "Shorthand for all four margins.",
+      "example": ".box { margin: 10px 20px; }",
+      "value": "[auto | <length-percentage>]{1,4}"
+    },
+    {
+      "id": 283,
+      "letter": "M",
+      "property": "margin-block",
+      "definition": "Sets the logical block-direction margin (shorthand for start/end).",
+      "example": ".box { margin-block: 10px; }",
+      "value": "[auto | <length-percentage>]{1,2}"
+    },
+    {
+      "id": 284,
+      "letter": "M",
+      "property": "margin-block-end",
+      "definition": "Sets the logical block-direction margin at the end.",
+      "example": ".box { margin-block-end: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 285,
+      "letter": "M",
+      "property": "margin-block-start",
+      "definition": "Sets the logical block-direction margin at the start.",
+      "example": ".box { margin-block-start: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 286,
+      "letter": "M",
+      "property": "margin-bottom",
+      "definition": "Sets the bottom margin.",
+      "example": ".box { margin-bottom: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 287,
+      "letter": "M",
+      "property": "margin-inline",
+      "definition": "Sets the logical inline-direction margin (shorthand for start/end).",
+      "example": ".box { margin-inline: 10px; }",
+      "value": "[auto | <length-percentage>]{1,2}"
+    },
+    {
+      "id": 288,
+      "letter": "M",
+      "property": "margin-inline-end",
+      "definition": "Sets the logical inline-direction margin at the end.",
+      "example": ".box { margin-inline-end: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 289,
+      "letter": "M",
+      "property": "margin-inline-start",
+      "definition": "Sets the logical inline-direction margin at the start.",
+      "example": ".box { margin-inline-start: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 290,
+      "letter": "M",
+      "property": "margin-left",
+      "definition": "Sets the left margin.",
+      "example": ".box { margin-left: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 291,
+      "letter": "M",
+      "property": "margin-right",
+      "definition": "Sets the right margin.",
+      "example": ".box { margin-right: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 292,
+      "letter": "M",
+      "property": "margin-top",
+      "definition": "Sets the top margin.",
+      "example": ".box { margin-top: 10px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 293,
+      "letter": "M",
+      "property": "margin-trim",
+      "definition": "Trims margins of child elements that would overflow their container's edge.",
+      "example": ".box { margin-trim: block; }",
+      "value": "none | in-flow | all | block || inline || block-start || block-end || inline-start || inline-end"
+    },
+    {
+      "id": 294,
+      "letter": "M",
+      "property": "marker",
+      "definition": "Shorthand referencing an SVG marker to render on a shape's vertices.",
+      "example": "path { marker: url(#arrow); }",
+      "value": "none | <url>"
+    },
+    {
+      "id": 295,
+      "letter": "M",
+      "property": "marker-end",
+      "definition": "References an SVG marker to render at the end vertex of a shape.",
+      "example": "path { marker-end: url(#arrow); }",
+      "value": "none | <url>"
+    },
+    {
+      "id": 296,
+      "letter": "M",
+      "property": "marker-mid",
+      "definition": "References an SVG marker to render at middle vertices of a shape.",
+      "example": "path { marker-mid: url(#dot); }",
+      "value": "none | <url>"
+    },
+    {
+      "id": 297,
+      "letter": "M",
+      "property": "marker-start",
+      "definition": "References an SVG marker to render at the start vertex of a shape.",
+      "example": "path { marker-start: url(#arrow); }",
+      "value": "none | <url>"
+    },
+    {
+      "id": 298,
+      "letter": "M",
+      "property": "mask",
+      "definition": "Shorthand for mask-related properties, hiding parts of an element via a mask layer.",
+      "example": ".box { mask: url(mask.svg); }",
+      "value": "<mask-layer>#"
+    },
+    {
+      "id": 299,
+      "letter": "M",
+      "property": "mask-border",
+      "definition": "Shorthand for mask-border properties, using a border-image-like syntax as a mask.",
+      "example": ".box { mask-border: url(mask.png) 30; }",
+      "value": "<mask-border-source> || <mask-border-slice> [/ <mask-border-width>? [/ <mask-border-outset>]?]? || <mask-border-repeat> || <mask-border-mode>"
+    },
+    {
+      "id": 300,
+      "letter": "M",
+      "property": "mask-border-mode",
+      "definition": "Specifies the blending mode used for a mask border image.",
+      "example": ".box { mask-border-mode: luminance; }",
+      "value": "luminance | alpha"
+    },
+    {
+      "id": 301,
+      "letter": "M",
+      "property": "mask-border-outset",
+      "definition": "Specifies how far a mask border extends beyond the border box.",
+      "example": ".box { mask-border-outset: 5px; }",
+      "value": "[<length> | <number>]{1,4}"
+    },
+    {
+      "id": 302,
+      "letter": "M",
+      "property": "mask-border-repeat",
+      "definition": "Specifies how a mask border image is repeated.",
+      "example": ".box { mask-border-repeat: stretch; }",
+      "value": "[stretch | repeat | round | space]{1,2}"
+    },
+    {
+      "id": 303,
+      "letter": "M",
+      "property": "mask-border-slice",
+      "definition": "Specifies how a mask border image is sliced.",
+      "example": ".box { mask-border-slice: 30; }",
+      "value": "[<number> | <percentage>]{1,4} fill?"
+    },
+    {
+      "id": 304,
+      "letter": "M",
+      "property": "mask-border-source",
+      "definition": "Specifies the source image for a mask border.",
+      "example": ".box { mask-border-source: url(mask.png); }",
+      "value": "none | <image>"
+    },
+    {
+      "id": 305,
+      "letter": "M",
+      "property": "mask-border-width",
+      "definition": "Specifies the widths of a mask border.",
+      "example": ".box { mask-border-width: 10px; }",
+      "value": "[<length-percentage> | <number> | auto]{1,4}"
+    },
+    {
+      "id": 306,
+      "letter": "M",
+      "property": "mask-clip",
+      "definition": "Specifies the area affected by a mask.",
+      "example": ".box { mask-clip: border-box; }",
+      "value": "[border-box | padding-box | content-box | fill-box | stroke-box | view-box | no-clip]#"
+    },
+    {
+      "id": 307,
+      "letter": "M",
+      "property": "mask-composite",
+      "definition": "Specifies how multiple mask layers are combined.",
+      "example": ".box { mask-composite: intersect; }",
+      "value": "[add | subtract | intersect | exclude]#"
+    },
+    {
+      "id": 308,
+      "letter": "M",
+      "property": "mask-image",
+      "definition": "Sets the mask layer image(s) of an element.",
+      "example": ".box { mask-image: url(mask.svg); }",
+      "value": "[none | <image> | <mask-source>]#"
+    },
+    {
+      "id": 309,
+      "letter": "M",
+      "property": "mask-mode",
+      "definition": "Indicates whether mask layers are treated as luminance or alpha masks.",
+      "example": ".box { mask-mode: alpha; }",
+      "value": "[alpha | luminance | match-source]#"
+    },
+    {
+      "id": 310,
+      "letter": "M",
+      "property": "mask-origin",
+      "definition": "Specifies the origin position of a mask layer.",
+      "example": ".box { mask-origin: content-box; }",
+      "value": "[border-box | padding-box | content-box | fill-box | stroke-box | view-box]#"
+    },
+    {
+      "id": 311,
+      "letter": "M",
+      "property": "mask-position",
+      "definition": "Sets the initial position of a mask layer.",
+      "example": ".box { mask-position: center; }",
+      "value": "<position>#"
+    },
+    {
+      "id": 312,
+      "letter": "M",
+      "property": "mask-repeat",
+      "definition": "Specifies how mask layer images repeat.",
+      "example": ".box { mask-repeat: no-repeat; }",
+      "value": "[repeat-style]#"
+    },
+    {
+      "id": 313,
+      "letter": "M",
+      "property": "mask-size",
+      "definition": "Specifies the size of mask layer images.",
+      "example": ".box { mask-size: cover; }",
+      "value": "<bg-size>#"
+    },
+    {
+      "id": 314,
+      "letter": "M",
+      "property": "mask-type",
+      "definition": "Specifies whether an SVG mask is used as a luminance or alpha mask.",
+      "example": "mask { mask-type: alpha; }",
+      "value": "luminance | alpha"
+    },
+    {
+      "id": 315,
+      "letter": "M",
+      "property": "math-depth",
+      "definition": "Describes a notion of depth for each element of a mathematical formula, for MathML.",
+      "example": "math { math-depth: add(1); }",
+      "value": "auto-add | add(<integer>) | <integer>"
+    },
+    {
+      "id": 316,
+      "letter": "M",
+      "property": "math-shift",
+      "definition": "Indicates whether superscripted content in MathML should be shifted up.",
+      "example": "mi { math-shift: compact; }",
+      "value": "normal | compact"
+    },
+    {
+      "id": 317,
+      "letter": "M",
+      "property": "math-style",
+      "definition": "Indicates whether MathML content should render in normal or compact style.",
+      "example": "math { math-style: compact; }",
+      "value": "normal | compact"
+    },
+    {
+      "id": 318,
+      "letter": "M",
+      "property": "max-block-size",
+      "definition": "Sets the maximum size of an element's block dimension.",
+      "example": ".box { max-block-size: 400px; }",
+      "value": "none | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 319,
+      "letter": "M",
+      "property": "max-height",
+      "definition": "Sets the maximum height of an element.",
+      "example": ".box { max-height: 400px; }",
+      "value": "none | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 320,
+      "letter": "M",
+      "property": "max-inline-size",
+      "definition": "Sets the maximum size of an element's inline dimension.",
+      "example": ".box { max-inline-size: 600px; }",
+      "value": "none | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 321,
+      "letter": "M",
+      "property": "max-width",
+      "definition": "Sets the maximum width of an element.",
+      "example": ".box { max-width: 600px; }",
+      "value": "none | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 322,
+      "letter": "M",
+      "property": "min-block-size",
+      "definition": "Sets the minimum size of an element's block dimension.",
+      "example": ".box { min-block-size: 100px; }",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 323,
+      "letter": "M",
+      "property": "min-height",
+      "definition": "Sets the minimum height of an element.",
+      "example": ".box { min-height: 100px; }",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 324,
+      "letter": "M",
+      "property": "min-inline-size",
+      "definition": "Sets the minimum size of an element's inline dimension.",
+      "example": ".box { min-inline-size: 100px; }",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 325,
+      "letter": "M",
+      "property": "min-width",
+      "definition": "Sets the minimum width of an element.",
+      "example": ".box { min-width: 100px; }",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 326,
+      "letter": "M",
+      "property": "mix-blend-mode",
+      "definition": "Defines how an element's content blends with its background.",
+      "example": ".box { mix-blend-mode: multiply; }",
+      "value": "normal | multiply | screen | overlay | darken | lighten | color-dodge | color-burn | difference | exclusion | hue | saturation | color | luminosity | plus-darker | plus-lighter"
+    },
+    {
+      "id": 327,
+      "letter": "O",
+      "property": "object-fit",
+      "definition": "Specifies how the content of a replaced element fits its box.",
+      "example": "img { object-fit: cover; }",
+      "value": "fill | contain | cover | none | scale-down"
+    },
+    {
+      "id": 328,
+      "letter": "O",
+      "property": "object-position",
+      "definition": "Specifies the alignment of a replaced element's content.",
+      "example": "img { object-position: center top; }",
+      "value": "<position>"
+    },
+    {
+      "id": 329,
+      "letter": "O",
+      "property": "object-view-box",
+      "definition": "Specifies a crop region applied to a replaced element's content box.",
+      "example": "img { object-view-box: inset(10%); }",
+      "value": "none | <basic-shape>"
+    },
+    {
+      "id": 330,
+      "letter": "O",
+      "property": "offset",
+      "definition": "Shorthand for animating an element along a defined path (motion path).",
+      "example": ".box { offset: path('M 0 0 L 100 100') 0%; }",
+      "value": "[<offset-position>? [<offset-path> [<offset-distance> || <offset-rotate>]?]?]! [/ <offset-anchor>]?"
+    },
+    {
+      "id": 331,
+      "letter": "O",
+      "property": "offset-anchor",
+      "definition": "Specifies the point of an element that is anchored to its motion path position.",
+      "example": ".box { offset-anchor: center; }",
+      "value": "auto | <position>"
+    },
+    {
+      "id": 332,
+      "letter": "O",
+      "property": "offset-distance",
+      "definition": "Specifies a position along a motion path.",
+      "example": ".box { offset-distance: 50%; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 333,
+      "letter": "O",
+      "property": "offset-path",
+      "definition": "Specifies the path an element is animated along.",
+      "example": ".box { offset-path: path('M 0 0 L 100 100'); }",
+      "value": "none | <ray()> | <url> | <basic-shape>"
+    },
+    {
+      "id": 334,
+      "letter": "O",
+      "property": "offset-position",
+      "definition": "Specifies the initial position of an offset path.",
+      "example": ".box { offset-position: auto; }",
+      "value": "normal | auto | <position>"
+    },
+    {
+      "id": 335,
+      "letter": "O",
+      "property": "offset-rotate",
+      "definition": "Specifies the direction of an element along its motion path.",
+      "example": ".box { offset-rotate: auto; }",
+      "value": "[auto | reverse] || <angle>"
+    },
+    {
+      "id": 336,
+      "letter": "O",
+      "property": "opacity",
+      "definition": "Sets the transparency level of an element.",
+      "example": ".box { opacity: 0.5; }",
+      "value": "<number> | <percentage>"
+    },
+    {
+      "id": 337,
+      "letter": "O",
+      "property": "order",
+      "definition": "Specifies the order of a flex or grid item.",
+      "example": ".item { order: 2; }",
+      "value": "<integer>"
+    },
+    {
+      "id": 338,
+      "letter": "O",
+      "property": "orphans",
+      "definition": "Sets the minimum lines left at the bottom of a page/column.",
+      "example": "p { orphans: 3; }",
+      "value": "<integer>"
+    },
+    {
+      "id": 339,
+      "letter": "O",
+      "property": "outline",
+      "definition": "Shorthand for outline properties.",
+      "example": ".box:focus { outline: 2px solid blue; }",
+      "value": "<outline-color> || <outline-style> || <outline-width>"
+    },
+    {
+      "id": 340,
+      "letter": "O",
+      "property": "outline-color",
+      "definition": "Sets the color of the outline.",
+      "example": ".box { outline-color: red; }",
+      "value": "auto | <color>"
+    },
+    {
+      "id": 341,
+      "letter": "O",
+      "property": "outline-offset",
+      "definition": "Sets the space between an outline and the edge of an element.",
+      "example": ".box { outline-offset: 4px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 342,
+      "letter": "O",
+      "property": "outline-style",
+      "definition": "Sets the style of the outline.",
+      "example": ".box { outline-style: dashed; }",
+      "value": "auto | none | dotted | dashed | solid | double | groove | ridge | inset | outset"
+    },
+    {
+      "id": 343,
+      "letter": "O",
+      "property": "outline-width",
+      "definition": "Sets the width of the outline.",
+      "example": ".box { outline-width: 2px; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 344,
+      "letter": "O",
+      "property": "overflow",
+      "definition": "Specifies what happens when content overflows an element's box.",
+      "example": ".box { overflow: hidden; }",
+      "value": "[visible | hidden | clip | scroll | auto]{1,2}"
+    },
+    {
+      "id": 345,
+      "letter": "O",
+      "property": "overflow-anchor",
+      "definition": "Opts an element out of scroll anchoring adjustments.",
+      "example": ".box { overflow-anchor: none; }",
+      "value": "auto | none"
+    },
+    {
+      "id": 346,
+      "letter": "O",
+      "property": "overflow-block",
+      "definition": "Specifies whether block-direction content overflow is clipped, scrolled, or visible.",
+      "example": ".box { overflow-block: scroll; }",
+      "value": "visible | hidden | clip | scroll | auto"
+    },
+    {
+      "id": 347,
+      "letter": "O",
+      "property": "overflow-clip-margin",
+      "definition": "Specifies how far an overflow:clip element's clip area extends past its border box.",
+      "example": ".box { overflow-clip-margin: 10px; }",
+      "value": "<visual-box> || <length>"
+    },
+    {
+      "id": 348,
+      "letter": "O",
+      "property": "overflow-inline",
+      "definition": "Specifies whether inline-direction content overflow is clipped, scrolled, or visible.",
+      "example": ".box { overflow-inline: scroll; }",
+      "value": "visible | hidden | clip | scroll | auto"
+    },
+    {
+      "id": 349,
+      "letter": "O",
+      "property": "overflow-wrap",
+      "definition": "Specifies whether the browser can break long words to prevent overflow.",
+      "example": "p { overflow-wrap: break-word; }",
+      "value": "normal | break-word | anywhere"
+    },
+    {
+      "id": 350,
+      "letter": "O",
+      "property": "overflow-x",
+      "definition": "Specifies horizontal overflow behavior.",
+      "example": ".box { overflow-x: scroll; }",
+      "value": "visible | hidden | clip | scroll | auto"
+    },
+    {
+      "id": 351,
+      "letter": "O",
+      "property": "overflow-y",
+      "definition": "Specifies vertical overflow behavior.",
+      "example": ".box { overflow-y: auto; }",
+      "value": "visible | hidden | clip | scroll | auto"
+    },
+    {
+      "id": 352,
+      "letter": "O",
+      "property": "overlay",
+      "definition": "Determines whether an element is rendered in the top layer while transitioning out.",
+      "example": ".box { overlay: auto; }",
+      "value": "none | auto"
+    },
+    {
+      "id": 353,
+      "letter": "O",
+      "property": "overscroll-behavior",
+      "definition": "Controls what happens when a scroll boundary is reached, shorthand.",
+      "example": ".box { overscroll-behavior: contain; }",
+      "value": "[contain | none | auto]{1,2}"
+    },
+    {
+      "id": 354,
+      "letter": "O",
+      "property": "overscroll-behavior-block",
+      "definition": "Controls scroll-boundary behavior along the block axis.",
+      "example": ".box { overscroll-behavior-block: contain; }",
+      "value": "contain | none | auto"
+    },
+    {
+      "id": 355,
+      "letter": "O",
+      "property": "overscroll-behavior-inline",
+      "definition": "Controls scroll-boundary behavior along the inline axis.",
+      "example": ".box { overscroll-behavior-inline: contain; }",
+      "value": "contain | none | auto"
+    },
+    {
+      "id": 356,
+      "letter": "O",
+      "property": "overscroll-behavior-x",
+      "definition": "Controls scroll-boundary behavior along the horizontal axis.",
+      "example": ".box { overscroll-behavior-x: contain; }",
+      "value": "contain | none | auto"
+    },
+    {
+      "id": 357,
+      "letter": "O",
+      "property": "overscroll-behavior-y",
+      "definition": "Controls scroll-boundary behavior along the vertical axis.",
+      "example": ".box { overscroll-behavior-y: contain; }",
+      "value": "contain | none | auto"
+    },
+    {
+      "id": 358,
+      "letter": "P",
+      "property": "padding",
+      "definition": "Shorthand for all four padding sides.",
+      "example": ".box { padding: 10px 20px; }",
+      "value": "<length-percentage>{1,4}"
+    },
+    {
+      "id": 359,
+      "letter": "P",
+      "property": "padding-block",
+      "definition": "Sets the logical block-direction padding (shorthand for start/end).",
+      "example": ".box { padding-block: 10px; }",
+      "value": "<length-percentage>{1,2}"
+    },
+    {
+      "id": 360,
+      "letter": "P",
+      "property": "padding-block-end",
+      "definition": "Sets the logical block-direction padding at the end.",
+      "example": ".box { padding-block-end: 10px; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 361,
+      "letter": "P",
+      "property": "padding-block-start",
+      "definition": "Sets the logical block-direction padding at the start.",
+      "example": ".box { padding-block-start: 10px; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 362,
+      "letter": "P",
+      "property": "padding-bottom",
+      "definition": "Sets the bottom padding.",
+      "example": ".box { padding-bottom: 10px; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 363,
+      "letter": "P",
+      "property": "padding-inline",
+      "definition": "Sets the logical inline-direction padding (shorthand for start/end).",
+      "example": ".box { padding-inline: 10px; }",
+      "value": "<length-percentage>{1,2}"
+    },
+    {
+      "id": 364,
+      "letter": "P",
+      "property": "padding-inline-end",
+      "definition": "Sets the logical inline-direction padding at the end.",
+      "example": ".box { padding-inline-end: 10px; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 365,
+      "letter": "P",
+      "property": "padding-inline-start",
+      "definition": "Sets the logical inline-direction padding at the start.",
+      "example": ".box { padding-inline-start: 10px; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 366,
+      "letter": "P",
+      "property": "padding-left",
+      "definition": "Sets the left padding.",
+      "example": ".box { padding-left: 10px; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 367,
+      "letter": "P",
+      "property": "padding-right",
+      "definition": "Sets the right padding.",
+      "example": ".box { padding-right: 10px; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 368,
+      "letter": "P",
+      "property": "padding-top",
+      "definition": "Sets the top padding.",
+      "example": ".box { padding-top: 10px; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 369,
+      "letter": "P",
+      "property": "page",
+      "definition": "Specifies the type of page a printed element should be associated with.",
+      "example": "h1 { page: chapter; }",
+      "value": "auto | <custom-ident>"
+    },
+    {
+      "id": 370,
+      "letter": "P",
+      "property": "paint-order",
+      "definition": "Specifies the order SVG fill, stroke, and markers are painted.",
+      "example": "text { paint-order: stroke fill; }",
+      "value": "normal | [fill || stroke || markers]"
+    },
+    {
+      "id": 371,
+      "letter": "P",
+      "property": "path-length",
+      "definition": "Specifies a total length for an SVG path, used to scale distance calculations.",
+      "example": "path { path-length: 100; }",
+      "value": "<number>"
+    },
+    {
+      "id": 372,
+      "letter": "P",
+      "property": "perspective",
+      "definition": "Gives a 3D-positioned element perspective.",
+      "example": ".container { perspective: 500px; }",
+      "value": "none | <length>"
+    },
+    {
+      "id": 373,
+      "letter": "P",
+      "property": "perspective-origin",
+      "definition": "Sets the origin for the perspective property.",
+      "example": ".container { perspective-origin: top left; }",
+      "value": "<position>"
+    },
+    {
+      "id": 374,
+      "letter": "P",
+      "property": "place-content",
+      "definition": "Shorthand for align-content and justify-content.",
+      "example": ".container { place-content: center; }",
+      "value": "<align-content> <justify-content>?"
+    },
+    {
+      "id": 375,
+      "letter": "P",
+      "property": "place-items",
+      "definition": "Shorthand for align-items and justify-items.",
+      "example": ".container { place-items: center; }",
+      "value": "<align-items> <justify-items>?"
+    },
+    {
+      "id": 376,
+      "letter": "P",
+      "property": "place-self",
+      "definition": "Shorthand for align-self and justify-self.",
+      "example": ".item { place-self: center; }",
+      "value": "<align-self> <justify-self>?"
+    },
+    {
+      "id": 377,
+      "letter": "P",
+      "property": "pointer-events",
+      "definition": "Specifies whether an element reacts to pointer events.",
+      "example": ".box { pointer-events: none; }",
+      "value": "auto | none | visiblePainted | visibleFill | visibleStroke | visible | painted | fill | stroke | all"
+    },
+    {
+      "id": 378,
+      "letter": "P",
+      "property": "position",
+      "definition": "Specifies the positioning method of an element.",
+      "example": ".box { position: relative; }",
+      "value": "static | relative | absolute | sticky | fixed"
+    },
+    {
+      "id": 379,
+      "letter": "P",
+      "property": "position-anchor",
+      "definition": "Associates a positioned element with an anchor element.",
+      "example": ".box { position-anchor: --my-anchor; }",
+      "value": "auto | <dashed-ident>"
+    },
+    {
+      "id": 380,
+      "letter": "P",
+      "property": "position-area",
+      "definition": "Positions an anchor-positioned element within a grid of areas around its anchor.",
+      "example": ".box { position-area: top; }",
+      "value": "none | <position-area-keywords> (e.g. top | left | center | span-all)"
+    },
+    {
+      "id": 381,
+      "letter": "P",
+      "property": "position-try",
+      "definition": "Shorthand for position-try-order and position-try-fallbacks.",
+      "example": ".box { position-try: flip-block; }",
+      "value": "<position-try-order>? <position-try-fallbacks>?"
+    },
+    {
+      "id": 382,
+      "letter": "P",
+      "property": "position-try-fallbacks",
+      "definition": "Specifies alternate positions to try when an anchor-positioned element overflows.",
+      "example": ".box { position-try-fallbacks: flip-block; }",
+      "value": "none | [[<dashed-ident> || <try-tactic>] | <'position-area'>]#"
+    },
+    {
+      "id": 383,
+      "letter": "P",
+      "property": "position-try-order",
+      "definition": "Specifies the order in which position-try fallback options are attempted.",
+      "example": ".box { position-try-order: most-height; }",
+      "value": "normal | most-width | most-height | most-block-size | most-inline-size | <dashed-ident>"
+    },
+    {
+      "id": 384,
+      "letter": "P",
+      "property": "position-visibility",
+      "definition": "Controls the visibility of an anchor-positioned element based on its anchor's visibility.",
+      "example": ".box { position-visibility: anchors-visible; }",
+      "value": "always | [anchors-visible || no-overflow]"
+    },
+    {
+      "id": 385,
+      "letter": "P",
+      "property": "print-color-adjust",
+      "definition": "Indicates whether background styling should be preserved when printing.",
+      "example": ".box { print-color-adjust: exact; }",
+      "value": "economy | exact"
+    },
+    {
+      "id": 386,
+      "letter": "Q",
+      "property": "quotes",
+      "definition": "Sets the quotation marks used for the quote element.",
+      "example": "q { quotes: '\\201C' '\\201D'; }",
+      "value": "none | auto | [<string> <string>]+"
+    },
+    {
+      "id": 387,
+      "letter": "R",
+      "property": "r",
+      "definition": "Sets the radius of an SVG circle.",
+      "example": "circle { r: 40; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 388,
+      "letter": "R",
+      "property": "reading-flow",
+      "definition": "Defines the flow order that assistive technology and sequential navigation follow.",
+      "example": ".container { reading-flow: flex-visual; }",
+      "value": "normal | source-order | flex-visual | flex-flow | grid-rows | grid-columns | grid-order"
+    },
+    {
+      "id": 389,
+      "letter": "R",
+      "property": "reading-order",
+      "definition": "Explicitly overrides an element's position in the reading-flow order.",
+      "example": ".item { reading-order: 1; }",
+      "value": "<integer>"
+    },
+    {
+      "id": 390,
+      "letter": "R",
+      "property": "resize",
+      "definition": "Specifies whether an element is resizable by the user.",
+      "example": "textarea { resize: vertical; }",
+      "value": "none | both | horizontal | vertical | block | inline"
+    },
+    {
+      "id": 391,
+      "letter": "R",
+      "property": "right",
+      "definition": "Sets the distance of a positioned element from the right.",
+      "example": ".box { position: absolute; right: 0; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 392,
+      "letter": "R",
+      "property": "rotate",
+      "definition": "Applies a rotation transform to an element independently of the transform property.",
+      "example": ".box { rotate: 45deg; }",
+      "value": "none | <angle> | [x | y | z | <number>{3}] && <angle>"
+    },
+    {
+      "id": 393,
+      "letter": "R",
+      "property": "row-gap",
+      "definition": "Sets the gap between rows in a grid or flex container.",
+      "example": ".container { row-gap: 10px; }",
+      "value": "normal | <length-percentage>"
+    },
+    {
+      "id": 394,
+      "letter": "R",
+      "property": "row-rule",
+      "definition": "Sets the rule line between grid/table rows (shorthand), mirroring column-rule.",
+      "example": ".grid { row-rule: 1px solid gray; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 395,
+      "letter": "R",
+      "property": "row-rule-break",
+      "definition": "Sets the rule line between grid/table rows (break), mirroring column-rule.",
+      "example": ".grid { row-rule-break: 1px solid gray; }",
+      "value": "none | intersection | spanning-item"
+    },
+    {
+      "id": 396,
+      "letter": "R",
+      "property": "row-rule-color",
+      "definition": "Sets the rule line between grid/table rows (color), mirroring column-rule.",
+      "example": ".grid { row-rule-color: 1px solid gray; }",
+      "value": "<color>"
+    },
+    {
+      "id": 397,
+      "letter": "R",
+      "property": "row-rule-style",
+      "definition": "Sets the rule line between grid/table rows (style), mirroring column-rule.",
+      "example": ".grid { row-rule-style: 1px solid gray; }",
+      "value": "<line-style>"
+    },
+    {
+      "id": 398,
+      "letter": "R",
+      "property": "row-rule-visibility-items",
+      "definition": "Sets the rule line between grid/table rows (visibility items), mirroring column-rule.",
+      "example": ".grid { row-rule-visibility-items: 1px solid gray; }",
+      "value": "covered-items | uncovered-items"
+    },
+    {
+      "id": 399,
+      "letter": "R",
+      "property": "row-rule-width",
+      "definition": "Sets the rule line between grid/table rows (width), mirroring column-rule.",
+      "example": ".grid { row-rule-width: 1px solid gray; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 400,
+      "letter": "R",
+      "property": "ruby-align",
+      "definition": "Specifies how ruby text and its base are aligned relative to each other.",
+      "example": "rt { ruby-align: center; }",
+      "value": "start | center | space-between | space-around"
+    },
+    {
+      "id": 401,
+      "letter": "R",
+      "property": "ruby-overhang",
+      "definition": "Specifies whether ruby text can overhang adjacent text.",
+      "example": "ruby { ruby-overhang: auto; }",
+      "value": "auto | none"
+    },
+    {
+      "id": 402,
+      "letter": "R",
+      "property": "ruby-position",
+      "definition": "Specifies the position of ruby text relative to its base.",
+      "example": "rt { ruby-position: over; }",
+      "value": "[alternate || [over | under]] | inter-character"
+    },
+    {
+      "id": 403,
+      "letter": "R",
+      "property": "rule",
+      "definition": "Shorthand setting the rule line between grid rows/columns (unified column-rule/row-rule).",
+      "example": ".grid { rule: 1px solid gray; }",
+      "value": "<line-width> || <line-style> || <color>"
+    },
+    {
+      "id": 404,
+      "letter": "R",
+      "property": "rule-break",
+      "definition": "Sets the break of the unified row/column rule shorthand.",
+      "example": ".grid { rule-break: solid; }",
+      "value": "none | intersection | spanning-item"
+    },
+    {
+      "id": 405,
+      "letter": "R",
+      "property": "rule-color",
+      "definition": "Sets the color of the unified row/column rule shorthand.",
+      "example": ".grid { rule-color: solid; }",
+      "value": "<color>"
+    },
+    {
+      "id": 406,
+      "letter": "R",
+      "property": "rule-style",
+      "definition": "Sets the style of the unified row/column rule shorthand.",
+      "example": ".grid { rule-style: solid; }",
+      "value": "<line-style>"
+    },
+    {
+      "id": 407,
+      "letter": "R",
+      "property": "rule-visibility-items",
+      "definition": "Sets the visibility items of the unified row/column rule shorthand.",
+      "example": ".grid { rule-visibility-items: solid; }",
+      "value": "covered-items | uncovered-items"
+    },
+    {
+      "id": 408,
+      "letter": "R",
+      "property": "rule-width",
+      "definition": "Sets the width of the unified row/column rule shorthand.",
+      "example": ".grid { rule-width: solid; }",
+      "value": "<line-width>"
+    },
+    {
+      "id": 409,
+      "letter": "R",
+      "property": "rx",
+      "definition": "Sets the x-axis radius of an SVG ellipse or rect's rounded corners.",
+      "example": "ellipse { rx: 40; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 410,
+      "letter": "R",
+      "property": "ry",
+      "definition": "Sets the y-axis radius of an SVG ellipse or rect's rounded corners.",
+      "example": "ellipse { ry: 30; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 411,
+      "letter": "S",
+      "property": "scale",
+      "definition": "Applies a scale transform to an element independently of the transform property.",
+      "example": ".box { scale: 1.5; }",
+      "value": "none | <number>{1,3}"
+    },
+    {
+      "id": 412,
+      "letter": "S",
+      "property": "scroll-behavior",
+      "definition": "Specifies whether scrolling is smooth or instant.",
+      "example": "html { scroll-behavior: smooth; }",
+      "value": "auto | smooth"
+    },
+    {
+      "id": 413,
+      "letter": "S",
+      "property": "scroll-initial-target",
+      "definition": "Specifies which element a scroll container should scroll to on initial load.",
+      "example": ".container { scroll-initial-target: nearest; }",
+      "value": "none | nearest"
+    },
+    {
+      "id": 414,
+      "letter": "S",
+      "property": "scroll-margin",
+      "definition": "Sets scroll margins around an element for scroll snapping.",
+      "example": ".item { scroll-margin: 10px; }",
+      "value": "<length>{1,4}"
+    },
+    {
+      "id": 415,
+      "letter": "S",
+      "property": "scroll-margin-block",
+      "definition": "Sets the scroll margin along the logical block axis (shorthand), used for scroll snapping.",
+      "example": ".item { scroll-margin-block: 10px; }",
+      "value": "<length>{1,2}"
+    },
+    {
+      "id": 416,
+      "letter": "S",
+      "property": "scroll-margin-block-end",
+      "definition": "Sets the scroll margin along the logical block axis at the end, used for scroll snapping.",
+      "example": ".item { scroll-margin-block-end: 10px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 417,
+      "letter": "S",
+      "property": "scroll-margin-block-start",
+      "definition": "Sets the scroll margin along the logical block axis at the start, used for scroll snapping.",
+      "example": ".item { scroll-margin-block-start: 10px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 418,
+      "letter": "S",
+      "property": "scroll-margin-bottom",
+      "definition": "Sets the scroll margin on the bottom side of an element, used for scroll snapping.",
+      "example": ".item { scroll-margin-bottom: 10px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 419,
+      "letter": "S",
+      "property": "scroll-margin-inline",
+      "definition": "Sets the scroll margin along the logical inline axis (shorthand), used for scroll snapping.",
+      "example": ".item { scroll-margin-inline: 10px; }",
+      "value": "<length>{1,2}"
+    },
+    {
+      "id": 420,
+      "letter": "S",
+      "property": "scroll-margin-inline-end",
+      "definition": "Sets the scroll margin along the logical inline axis at the end, used for scroll snapping.",
+      "example": ".item { scroll-margin-inline-end: 10px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 421,
+      "letter": "S",
+      "property": "scroll-margin-inline-start",
+      "definition": "Sets the scroll margin along the logical inline axis at the start, used for scroll snapping.",
+      "example": ".item { scroll-margin-inline-start: 10px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 422,
+      "letter": "S",
+      "property": "scroll-margin-left",
+      "definition": "Sets the scroll margin on the left side of an element, used for scroll snapping.",
+      "example": ".item { scroll-margin-left: 10px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 423,
+      "letter": "S",
+      "property": "scroll-margin-right",
+      "definition": "Sets the scroll margin on the right side of an element, used for scroll snapping.",
+      "example": ".item { scroll-margin-right: 10px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 424,
+      "letter": "S",
+      "property": "scroll-margin-top",
+      "definition": "Sets the scroll margin on the top side of an element, used for scroll snapping.",
+      "example": ".item { scroll-margin-top: 10px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 425,
+      "letter": "S",
+      "property": "scroll-marker-group",
+      "definition": "Creates a group of ::scroll-marker pseudo-elements before or after a scroll container.",
+      "example": ".carousel { scroll-marker-group: after; }",
+      "value": "none | before | after"
+    },
+    {
+      "id": 426,
+      "letter": "S",
+      "property": "scroll-padding",
+      "definition": "Sets scroll padding for a scroll container.",
+      "example": ".container { scroll-padding: 20px; }",
+      "value": "[auto | <length-percentage>]{1,4}"
+    },
+    {
+      "id": 427,
+      "letter": "S",
+      "property": "scroll-padding-block",
+      "definition": "Sets the scroll padding along the logical block axis (shorthand) of a scroll container.",
+      "example": ".container { scroll-padding-block: 20px; }",
+      "value": "[auto | <length-percentage>]{1,2}"
+    },
+    {
+      "id": 428,
+      "letter": "S",
+      "property": "scroll-padding-block-end",
+      "definition": "Sets the scroll padding along the logical block axis at the end of a scroll container.",
+      "example": ".container { scroll-padding-block-end: 20px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 429,
+      "letter": "S",
+      "property": "scroll-padding-block-start",
+      "definition": "Sets the scroll padding along the logical block axis at the start of a scroll container.",
+      "example": ".container { scroll-padding-block-start: 20px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 430,
+      "letter": "S",
+      "property": "scroll-padding-bottom",
+      "definition": "Sets the scroll padding on the bottom side of a scroll container.",
+      "example": ".container { scroll-padding-bottom: 20px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 431,
+      "letter": "S",
+      "property": "scroll-padding-inline",
+      "definition": "Sets the scroll padding along the logical inline axis (shorthand) of a scroll container.",
+      "example": ".container { scroll-padding-inline: 20px; }",
+      "value": "[auto | <length-percentage>]{1,2}"
+    },
+    {
+      "id": 432,
+      "letter": "S",
+      "property": "scroll-padding-inline-end",
+      "definition": "Sets the scroll padding along the logical inline axis at the end of a scroll container.",
+      "example": ".container { scroll-padding-inline-end: 20px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 433,
+      "letter": "S",
+      "property": "scroll-padding-inline-start",
+      "definition": "Sets the scroll padding along the logical inline axis at the start of a scroll container.",
+      "example": ".container { scroll-padding-inline-start: 20px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 434,
+      "letter": "S",
+      "property": "scroll-padding-left",
+      "definition": "Sets the scroll padding on the left side of a scroll container.",
+      "example": ".container { scroll-padding-left: 20px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 435,
+      "letter": "S",
+      "property": "scroll-padding-right",
+      "definition": "Sets the scroll padding on the right side of a scroll container.",
+      "example": ".container { scroll-padding-right: 20px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 436,
+      "letter": "S",
+      "property": "scroll-padding-top",
+      "definition": "Sets the scroll padding on the top side of a scroll container.",
+      "example": ".container { scroll-padding-top: 20px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 437,
+      "letter": "S",
+      "property": "scroll-snap-align",
+      "definition": "Specifies the box's snap position within a snap container.",
+      "example": ".item { scroll-snap-align: start; }",
+      "value": "[none | start | end | center]{1,2}"
+    },
+    {
+      "id": 438,
+      "letter": "S",
+      "property": "scroll-snap-stop",
+      "definition": "Specifies whether snapping must stop at every snap point or may skip past some.",
+      "example": ".item { scroll-snap-stop: always; }",
+      "value": "normal | always"
+    },
+    {
+      "id": 439,
+      "letter": "S",
+      "property": "scroll-snap-type",
+      "definition": "Sets how strictly snap points are enforced.",
+      "example": ".container { scroll-snap-type: x mandatory; }",
+      "value": "none | [x | y | block | inline | both] [mandatory | proximity]?"
+    },
+    {
+      "id": 440,
+      "letter": "S",
+      "property": "scroll-target-group",
+      "definition": "Groups elements so that scroll-marker or scroll-button navigation applies among them.",
+      "example": ".container { scroll-target-group: auto; }",
+      "value": "none | auto"
+    },
+    {
+      "id": 441,
+      "letter": "S",
+      "property": "scroll-timeline",
+      "definition": "Shorthand for scroll-timeline-name and scroll-timeline-axis.",
+      "example": ".container { scroll-timeline: --my-timeline block; }",
+      "value": "[<dashed-ident> <axis>?]#"
+    },
+    {
+      "id": 442,
+      "letter": "S",
+      "property": "scroll-timeline-axis",
+      "definition": "Specifies the axis of the scrollbar that drives a scroll-driven animation.",
+      "example": ".container { scroll-timeline-axis: block; }",
+      "value": "block | inline | x | y"
+    },
+    {
+      "id": 443,
+      "letter": "S",
+      "property": "scroll-timeline-name",
+      "definition": "Names an element's scroll progress as a timeline for scroll-driven animations.",
+      "example": ".container { scroll-timeline-name: --my-timeline; }",
+      "value": "none | <dashed-ident>#"
+    },
+    {
+      "id": 444,
+      "letter": "S",
+      "property": "scrollbar-color",
+      "definition": "Sets the color of a scrolling element's scrollbar.",
+      "example": ".box { scrollbar-color: gray white; }",
+      "value": "auto | <color>{2}"
+    },
+    {
+      "id": 445,
+      "letter": "S",
+      "property": "scrollbar-gutter",
+      "definition": "Reserves space for a scrollbar to avoid layout shift.",
+      "example": ".box { scrollbar-gutter: stable; }",
+      "value": "auto | stable && both-edges?"
+    },
+    {
+      "id": 446,
+      "letter": "S",
+      "property": "scrollbar-width",
+      "definition": "Sets the width (thin, auto, none) of a scrolling element's scrollbar.",
+      "example": ".box { scrollbar-width: thin; }",
+      "value": "auto | thin | none"
+    },
+    {
+      "id": 447,
+      "letter": "S",
+      "property": "shape-image-threshold",
+      "definition": "Sets the alpha channel threshold used to extract a shape from an image.",
+      "example": ".box { shape-image-threshold: 0.5; }",
+      "value": "<number> | <percentage>"
+    },
+    {
+      "id": 448,
+      "letter": "S",
+      "property": "shape-margin",
+      "definition": "Sets a margin around a shape defined by shape-outside.",
+      "example": ".box { shape-margin: 10px; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 449,
+      "letter": "S",
+      "property": "shape-outside",
+      "definition": "Defines a shape around which inline content should wrap.",
+      "example": ".box { shape-outside: circle(50%); }",
+      "value": "none | <shape-box> || <basic-shape> | <image>"
+    },
+    {
+      "id": 450,
+      "letter": "S",
+      "property": "shape-rendering",
+      "definition": "Provides a hint about how to optimize rendering of SVG geometry.",
+      "example": "path { shape-rendering: crispEdges; }",
+      "value": "auto | optimizeSpeed | crispEdges | geometricPrecision"
+    },
+    {
+      "id": 451,
+      "letter": "S",
+      "property": "speak-as",
+      "definition": "Specifies how a list-style-type's markers are read by speech synthesizers.",
+      "example": "li { speak-as: spell-out; }",
+      "value": "auto | bullets | numbers | words | spell-out || literal-punctuation | no-punctuation"
+    },
+    {
+      "id": 452,
+      "letter": "S",
+      "property": "stop-color",
+      "definition": "Defines the color of an SVG gradient stop.",
+      "example": "stop { stop-color: red; }",
+      "value": "<color>"
+    },
+    {
+      "id": 453,
+      "letter": "S",
+      "property": "stop-opacity",
+      "definition": "Defines the opacity of an SVG gradient stop.",
+      "example": "stop { stop-opacity: 0.5; }",
+      "value": "<number> | <percentage>"
+    },
+    {
+      "id": 454,
+      "letter": "S",
+      "property": "stroke",
+      "definition": "Sets the color used to paint the outline of an SVG shape.",
+      "example": "path { stroke: black; }",
+      "value": "none | <color> | <url> | context-fill | context-stroke"
+    },
+    {
+      "id": 455,
+      "letter": "S",
+      "property": "stroke-dasharray",
+      "definition": "Defines a dash pattern used to stroke an SVG shape's outline.",
+      "example": "path { stroke-dasharray: 5,5; }",
+      "value": "none | [<length-percentage> | <number>]#"
+    },
+    {
+      "id": 456,
+      "letter": "S",
+      "property": "stroke-dashoffset",
+      "definition": "Defines an offset into the dash pattern used to stroke an SVG shape.",
+      "example": "path { stroke-dashoffset: 10; }",
+      "value": "<length-percentage> | <number>"
+    },
+    {
+      "id": 457,
+      "letter": "S",
+      "property": "stroke-linecap",
+      "definition": "Defines the shape used at the ends of an SVG stroked path.",
+      "example": "path { stroke-linecap: round; }",
+      "value": "butt | round | square"
+    },
+    {
+      "id": 458,
+      "letter": "S",
+      "property": "stroke-linejoin",
+      "definition": "Defines the shape used at the corners of an SVG stroked path.",
+      "example": "path { stroke-linejoin: round; }",
+      "value": "miter | round | bevel | miter-clip | arcs"
+    },
+    {
+      "id": 459,
+      "letter": "S",
+      "property": "stroke-miterlimit",
+      "definition": "Limits the ratio used when the stroke-linejoin is miter.",
+      "example": "path { stroke-miterlimit: 4; }",
+      "value": "<number>"
+    },
+    {
+      "id": 460,
+      "letter": "S",
+      "property": "stroke-opacity",
+      "definition": "Sets the opacity of the stroke of an SVG shape.",
+      "example": "path { stroke-opacity: 0.5; }",
+      "value": "<number> | <percentage>"
+    },
+    {
+      "id": 461,
+      "letter": "S",
+      "property": "stroke-width",
+      "definition": "Sets the width of the stroke on an SVG shape.",
+      "example": "path { stroke-width: 2; }",
+      "value": "<length-percentage> | <number>"
+    },
+    {
+      "id": 462,
+      "letter": "T",
+      "property": "tab-size",
+      "definition": "Sets the width of a tab character.",
+      "example": "pre { tab-size: 4; }",
+      "value": "<number> | <length>"
+    },
+    {
+      "id": 463,
+      "letter": "T",
+      "property": "table-layout",
+      "definition": "Sets the algorithm used to lay out table cells.",
+      "example": "table { table-layout: fixed; }",
+      "value": "auto | fixed"
+    },
+    {
+      "id": 464,
+      "letter": "T",
+      "property": "text-align",
+      "definition": "Sets the horizontal alignment of text.",
+      "example": "p { text-align: center; }",
+      "value": "start | end | left | right | center | justify | match-parent"
+    },
+    {
+      "id": 465,
+      "letter": "T",
+      "property": "text-align-last",
+      "definition": "Sets the alignment of the last line of text.",
+      "example": "p { text-align-last: right; }",
+      "value": "auto | start | end | left | right | center | justify"
+    },
+    {
+      "id": 466,
+      "letter": "T",
+      "property": "text-anchor",
+      "definition": "Aligns SVG text content relative to a given point.",
+      "example": "text { text-anchor: middle; }",
+      "value": "start | middle | end"
+    },
+    {
+      "id": 467,
+      "letter": "T",
+      "property": "text-autospace",
+      "definition": "Adjusts spacing between characters of different scripts.",
+      "example": "p { text-autospace: normal; }",
+      "value": "normal | no-autospace"
+    },
+    {
+      "id": 468,
+      "letter": "T",
+      "property": "text-box",
+      "definition": "Shorthand for text-box-trim and text-box-edge, trimming space above/below text.",
+      "example": "h1 { text-box: trim-both cap alphabetic; }",
+      "value": "normal | <'text-box-trim'> || <'text-box-edge'>"
+    },
+    {
+      "id": 469,
+      "letter": "T",
+      "property": "text-box-edge",
+      "definition": "Specifies metrics to align a text box's edges to, working with text-box-trim.",
+      "example": "h1 { text-box-edge: cap alphabetic; }",
+      "value": "auto | text | [alphabetic | cap | ex | ideographic | ideographic-ink]"
+    },
+    {
+      "id": 470,
+      "letter": "T",
+      "property": "text-box-trim",
+      "definition": "Trims block-direction space above and/or below a text element's glyphs.",
+      "example": "h1 { text-box-trim: trim-both; }",
+      "value": "none | trim-start | trim-end | trim-both"
+    },
+    {
+      "id": 471,
+      "letter": "T",
+      "property": "text-combine-upright",
+      "definition": "Combines multiple characters into the space of a single character in vertical text.",
+      "example": "span { text-combine-upright: all; }",
+      "value": "none | all | [digits <integer>?]"
+    },
+    {
+      "id": 472,
+      "letter": "T",
+      "property": "text-decoration",
+      "definition": "Shorthand for text-decoration properties.",
+      "example": "a { text-decoration: underline; }",
+      "value": "<text-decoration-line> || <text-decoration-style> || <text-decoration-color> || <text-decoration-thickness>"
+    },
+    {
+      "id": 473,
+      "letter": "T",
+      "property": "text-decoration-color",
+      "definition": "Sets the color of the text decoration line.",
+      "example": "a { text-decoration-color: red; }",
+      "value": "<color>"
+    },
+    {
+      "id": 474,
+      "letter": "T",
+      "property": "text-decoration-inset",
+      "definition": "Sets the space between a text underline and the text itself.",
+      "example": "a { text-decoration-inset: 2px; }",
+      "value": "<length>"
+    },
+    {
+      "id": 475,
+      "letter": "T",
+      "property": "text-decoration-line",
+      "definition": "Sets the kind of text decoration used.",
+      "example": "a { text-decoration-line: underline; }",
+      "value": "none | [underline || overline || line-through || blink] | spelling-error | grammar-error"
+    },
+    {
+      "id": 476,
+      "letter": "T",
+      "property": "text-decoration-skip-ink",
+      "definition": "Specifies whether underlines/overlines skip over ink of the glyphs they cross.",
+      "example": "a { text-decoration-skip-ink: none; }",
+      "value": "auto | all | none"
+    },
+    {
+      "id": 477,
+      "letter": "T",
+      "property": "text-decoration-style",
+      "definition": "Sets the style of the text decoration line.",
+      "example": "a { text-decoration-style: wavy; }",
+      "value": "solid | double | dotted | dashed | wavy"
+    },
+    {
+      "id": 478,
+      "letter": "T",
+      "property": "text-decoration-thickness",
+      "definition": "Sets the thickness of the text decoration line.",
+      "example": "a { text-decoration-thickness: 2px; }",
+      "value": "auto | from-font | <length-percentage>"
+    },
+    {
+      "id": 479,
+      "letter": "T",
+      "property": "text-emphasis",
+      "definition": "Shorthand for text-emphasis properties.",
+      "example": "p { text-emphasis: dot; }",
+      "value": "<text-emphasis-style> || <text-emphasis-color>"
+    },
+    {
+      "id": 480,
+      "letter": "T",
+      "property": "text-emphasis-color",
+      "definition": "Sets the color of emphasis marks.",
+      "example": "p { text-emphasis-color: red; }",
+      "value": "<color>"
+    },
+    {
+      "id": 481,
+      "letter": "T",
+      "property": "text-emphasis-position",
+      "definition": "Sets where emphasis marks are drawn relative to the text.",
+      "example": "p { text-emphasis-position: over; }",
+      "value": "[over | under] && [right | left]?"
+    },
+    {
+      "id": 482,
+      "letter": "T",
+      "property": "text-emphasis-style",
+      "definition": "Sets the shape of emphasis marks.",
+      "example": "p { text-emphasis-style: circle; }",
+      "value": "none | [ [filled | open] || [dot | circle | double-circle | triangle | sesame] ] | <string>"
+    },
+    {
+      "id": 483,
+      "letter": "T",
+      "property": "text-indent",
+      "definition": "Specifies the indentation of the first line of text.",
+      "example": "p { text-indent: 40px; }",
+      "value": "<length-percentage> && hanging? && each-line?"
+    },
+    {
+      "id": 484,
+      "letter": "T",
+      "property": "text-justify",
+      "definition": "Specifies justification method when text-align is justify.",
+      "example": "p { text-justify: inter-word; }",
+      "value": "auto | inter-character | inter-word | none"
+    },
+    {
+      "id": 485,
+      "letter": "T",
+      "property": "text-orientation",
+      "definition": "Sets the orientation of text in a line (vertical writing).",
+      "example": "p { text-orientation: upright; }",
+      "value": "mixed | upright | sideways"
+    },
+    {
+      "id": 486,
+      "letter": "T",
+      "property": "text-overflow",
+      "definition": "Specifies how overflowed text is signaled to the user.",
+      "example": ".box { text-overflow: ellipsis; }",
+      "value": "clip | ellipsis | <string>"
+    },
+    {
+      "id": 487,
+      "letter": "T",
+      "property": "text-rendering",
+      "definition": "Provides a hint about how to optimize text rendering.",
+      "example": "p { text-rendering: optimizeLegibility; }",
+      "value": "auto | optimizeSpeed | optimizeLegibility | geometricPrecision"
+    },
+    {
+      "id": 488,
+      "letter": "T",
+      "property": "text-shadow",
+      "definition": "Adds shadow to text.",
+      "example": "h1 { text-shadow: 2px 2px 4px gray; }",
+      "value": "none | [<color>? <length>{2,3}]#"
+    },
+    {
+      "id": 489,
+      "letter": "T",
+      "property": "text-size-adjust",
+      "definition": "Controls automatic text-size adjustment on mobile browsers.",
+      "example": "body { text-size-adjust: 100%; }",
+      "value": "auto | none | <percentage>"
+    },
+    {
+      "id": 490,
+      "letter": "T",
+      "property": "text-spacing-trim",
+      "definition": "Controls spacing adjustments between typographic characters, mainly for CJK text.",
+      "example": "p { text-spacing-trim: space-all; }",
+      "value": "space-all | normal | space-first | trim-start"
+    },
+    {
+      "id": 491,
+      "letter": "T",
+      "property": "text-transform",
+      "definition": "Controls capitalization of text.",
+      "example": "p { text-transform: uppercase; }",
+      "value": "none | capitalize | uppercase | lowercase | full-width | full-size-kana"
+    },
+    {
+      "id": 492,
+      "letter": "T",
+      "property": "text-underline-offset",
+      "definition": "Sets the offset distance of an underline.",
+      "example": "a { text-underline-offset: 3px; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 493,
+      "letter": "T",
+      "property": "text-underline-position",
+      "definition": "Sets the position of an underline relative to the text.",
+      "example": "a { text-underline-position: under; }",
+      "value": "auto | [from-font | under] || [left | right]"
+    },
+    {
+      "id": 494,
+      "letter": "T",
+      "property": "text-wrap",
+      "definition": "Shorthand for text-wrap-mode and text-wrap-style.",
+      "example": "p { text-wrap: balance; }",
+      "value": "wrap | nowrap | balance | pretty | stable"
+    },
+    {
+      "id": 495,
+      "letter": "T",
+      "property": "text-wrap-mode",
+      "definition": "Specifies whether text may wrap onto multiple lines.",
+      "example": "p { text-wrap-mode: nowrap; }",
+      "value": "wrap | nowrap"
+    },
+    {
+      "id": 496,
+      "letter": "T",
+      "property": "text-wrap-style",
+      "definition": "Specifies how the lines of a wrapped text block are balanced.",
+      "example": "p { text-wrap-style: pretty; }",
+      "value": "auto | balance | pretty | stable"
+    },
+    {
+      "id": 497,
+      "letter": "T",
+      "property": "timeline-scope",
+      "definition": "Extends the scope of a named timeline to be referenced by ancestor elements.",
+      "example": ".container { timeline-scope: --my-timeline; }",
+      "value": "none | <dashed-ident>#"
+    },
+    {
+      "id": 498,
+      "letter": "T",
+      "property": "top",
+      "definition": "Sets the distance of a positioned element from the top.",
+      "example": ".box { position: absolute; top: 0; }",
+      "value": "auto | <length-percentage>"
+    },
+    {
+      "id": 499,
+      "letter": "T",
+      "property": "touch-action",
+      "definition": "Specifies how an element's region can be manipulated via touch.",
+      "example": ".box { touch-action: pan-y; }",
+      "value": "auto | none | pan-x | pan-left | pan-right | pan-y | pan-up | pan-down | pinch-zoom | manipulation"
+    },
+    {
+      "id": 500,
+      "letter": "T",
+      "property": "transform",
+      "definition": "Applies a 2D or 3D transformation to an element.",
+      "example": ".box { transform: rotate(45deg); }",
+      "value": "none | <transform-function>+"
+    },
+    {
+      "id": 501,
+      "letter": "T",
+      "property": "transform-box",
+      "definition": "Defines the layout box to which a transform is relative.",
+      "example": ".box { transform-box: fill-box; }",
+      "value": "content-box | border-box | fill-box | stroke-box | view-box"
+    },
+    {
+      "id": 502,
+      "letter": "T",
+      "property": "transform-origin",
+      "definition": "Sets the origin point for an element's transformation.",
+      "example": ".box { transform-origin: top left; }",
+      "value": "<length-percentage>{1,2} <length>?"
+    },
+    {
+      "id": 503,
+      "letter": "T",
+      "property": "transform-style",
+      "definition": "Specifies whether children are positioned in 3D space.",
+      "example": ".box { transform-style: preserve-3d; }",
+      "value": "flat | preserve-3d"
+    },
+    {
+      "id": 504,
+      "letter": "T",
+      "property": "transition",
+      "definition": "Shorthand for transition properties.",
+      "example": ".box { transition: all 0.3s ease; }",
+      "value": "[<transition-property> || <time> || <easing-function> || <time>]#"
+    },
+    {
+      "id": 505,
+      "letter": "T",
+      "property": "transition-behavior",
+      "definition": "Specifies whether transitions are started for discrete (non-interpolable) properties.",
+      "example": ".box { transition-behavior: allow-discrete; }",
+      "value": "normal | allow-discrete"
+    },
+    {
+      "id": 506,
+      "letter": "T",
+      "property": "transition-delay",
+      "definition": "Specifies a delay before a transition effect starts.",
+      "example": ".box { transition-delay: 0.5s; }",
+      "value": "<time>#"
+    },
+    {
+      "id": 507,
+      "letter": "T",
+      "property": "transition-duration",
+      "definition": "Specifies how long a transition effect takes.",
+      "example": ".box { transition-duration: 0.3s; }",
+      "value": "<time>#"
+    },
+    {
+      "id": 508,
+      "letter": "T",
+      "property": "transition-property",
+      "definition": "Specifies which CSS properties should transition.",
+      "example": ".box { transition-property: color; }",
+      "value": "none | all | <custom-ident>#"
+    },
+    {
+      "id": 509,
+      "letter": "T",
+      "property": "transition-timing-function",
+      "definition": "Specifies the speed curve of the transition effect.",
+      "example": ".box { transition-timing-function: ease-in; }",
+      "value": "<easing-function>#"
+    },
+    {
+      "id": 510,
+      "letter": "T",
+      "property": "translate",
+      "definition": "Applies a translation transform to an element independently of the transform property.",
+      "example": ".box { translate: 20px 10px; }",
+      "value": "none | <length-percentage> [<length-percentage> <length>?]?"
+    },
+    {
+      "id": 511,
+      "letter": "U",
+      "property": "unicode-bidi",
+      "definition": "Combined with direction, determines text handling of bidirectional text.",
+      "example": "span { unicode-bidi: bidi-override; }",
+      "value": "normal | embed | isolate | bidi-override | isolate-override | plaintext"
+    },
+    {
+      "id": 512,
+      "letter": "U",
+      "property": "user-select",
+      "definition": "Controls whether text can be selected by the user.",
+      "example": ".box { user-select: none; }",
+      "value": "auto | text | none | contain | all"
+    },
+    {
+      "id": 513,
+      "letter": "V",
+      "property": "vector-effect",
+      "definition": "Specifies that an SVG element's appearance is not affected by transformations (e.g. non-scaling stroke).",
+      "example": "path { vector-effect: non-scaling-stroke; }",
+      "value": "none | non-scaling-stroke | non-scaling-size | non-rotation | fixed-position"
+    },
+    {
+      "id": 514,
+      "letter": "V",
+      "property": "vertical-align",
+      "definition": "Sets vertical alignment of an inline or table-cell element.",
+      "example": "img { vertical-align: middle; }",
+      "value": "baseline | sub | super | text-top | text-bottom | middle | top | bottom | <length-percentage>"
+    },
+    {
+      "id": 515,
+      "letter": "V",
+      "property": "view-timeline",
+      "definition": "Shorthand for view-timeline-name, view-timeline-axis, and view-timeline-inset.",
+      "example": ".item { view-timeline: --reveal block; }",
+      "value": "[<dashed-ident> <axis>?]#"
+    },
+    {
+      "id": 516,
+      "letter": "V",
+      "property": "view-timeline-axis",
+      "definition": "Specifies the axis for a view-progress timeline.",
+      "example": ".item { view-timeline-axis: block; }",
+      "value": "block | inline | x | y"
+    },
+    {
+      "id": 517,
+      "letter": "V",
+      "property": "view-timeline-inset",
+      "definition": "Adjusts the position of a view-progress timeline's start/end.",
+      "example": ".item { view-timeline-inset: 10% 20%; }",
+      "value": "[auto | <length-percentage>]{1,2}"
+    },
+    {
+      "id": 518,
+      "letter": "V",
+      "property": "view-timeline-name",
+      "definition": "Names an element's view-progress timeline for scroll-driven animations.",
+      "example": ".item { view-timeline-name: --reveal; }",
+      "value": "none | <dashed-ident>#"
+    },
+    {
+      "id": 519,
+      "letter": "V",
+      "property": "view-transition-class",
+      "definition": "Assigns a class to view-transition pseudo-elements for shared styling.",
+      "example": ".item { view-transition-class: card; }",
+      "value": "none | <custom-ident>+"
+    },
+    {
+      "id": 520,
+      "letter": "V",
+      "property": "view-transition-name",
+      "definition": "Names an element to participate in a document's view transitions.",
+      "example": ".item { view-transition-name: hero-image; }",
+      "value": "none | auto | match-element | <custom-ident>"
+    },
+    {
+      "id": 521,
+      "letter": "V",
+      "property": "view-transition-scope",
+      "definition": "Limits the scope in which a view transition's name applies.",
+      "example": ".item { view-transition-scope: root; }",
+      "value": "none | root | match-element"
+    },
+    {
+      "id": 522,
+      "letter": "V",
+      "property": "visibility",
+      "definition": "Specifies whether an element is visible.",
+      "example": ".box { visibility: hidden; }",
+      "value": "visible | hidden | collapse"
+    },
+    {
+      "id": 523,
+      "letter": "W",
+      "property": "white-space",
+      "definition": "Specifies how whitespace inside an element is handled.",
+      "example": "pre { white-space: pre-wrap; }",
+      "value": "normal | pre | nowrap | pre-wrap | pre-line | break-spaces | <'white-space-collapse'> || <'text-wrap-mode'>"
+    },
+    {
+      "id": 524,
+      "letter": "W",
+      "property": "white-space-collapse",
+      "definition": "Controls how whitespace inside an element is collapsed.",
+      "example": "pre { white-space-collapse: preserve; }",
+      "value": "collapse | preserve | preserve-breaks | preserve-spaces | break-spaces"
+    },
+    {
+      "id": 525,
+      "letter": "W",
+      "property": "widows",
+      "definition": "Sets the minimum lines left at the top of a page/column.",
+      "example": "p { widows: 3; }",
+      "value": "<integer>"
+    },
+    {
+      "id": 526,
+      "letter": "W",
+      "property": "width",
+      "definition": "Sets the width of an element.",
+      "example": ".box { width: 300px; }",
+      "value": "auto | <length-percentage> | min-content | max-content | fit-content"
+    },
+    {
+      "id": 527,
+      "letter": "W",
+      "property": "will-change",
+      "definition": "Hints to the browser about properties expected to change.",
+      "example": ".box { will-change: transform; }",
+      "value": "auto | <animateable-feature># (e.g. scroll-position, contents, <custom-ident>)"
+    },
+    {
+      "id": 528,
+      "letter": "W",
+      "property": "word-break",
+      "definition": "Specifies how words break when reaching the end of a line.",
+      "example": "p { word-break: break-all; }",
+      "value": "normal | break-all | keep-all | break-word | auto-phrase"
+    },
+    {
+      "id": 529,
+      "letter": "W",
+      "property": "word-spacing",
+      "definition": "Sets the spacing between words.",
+      "example": "p { word-spacing: 4px; }",
+      "value": "normal | <length>"
+    },
+    {
+      "id": 530,
+      "letter": "W",
+      "property": "writing-mode",
+      "definition": "Sets whether text is laid out horizontally or vertically.",
+      "example": "p { writing-mode: vertical-rl; }",
+      "value": "horizontal-tb | vertical-rl | vertical-lr | sideways-rl | sideways-lr"
+    },
+    {
+      "id": 531,
+      "letter": "X",
+      "property": "x",
+      "definition": "Sets the x-coordinate of an SVG element.",
+      "example": "rect { x: 10; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 532,
+      "letter": "Y",
+      "property": "y",
+      "definition": "Sets the y-coordinate of an SVG element.",
+      "example": "rect { y: 10; }",
+      "value": "<length-percentage>"
+    },
+    {
+      "id": 533,
+      "letter": "Z",
+      "property": "z-index",
+      "definition": "Sets the stack order of a positioned element.",
+      "example": ".modal { z-index: 999; }",
+      "value": "auto | <integer>"
+    },
+    {
+      "id": 534,
+      "letter": "Z",
+      "property": "zoom",
+      "definition": "Applies a non-standard zoom factor to an element's size.",
+      "example": ".box { zoom: 1.5; }",
+      "value": "normal | reset | <number> | <percentage>"
+    }
+  ]
